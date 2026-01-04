@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+
+# Excel files and data (Privacy)
+*.xlsx
+*.xls
+File gốc để chuẩn hóa/
+
+# Project specific
+DMKT_BINH_MY.xlsx
+
+# IDE
+.vscode/
+.idea/
