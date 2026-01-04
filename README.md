@@ -92,10 +92,6 @@ Mọi sự đóng góp đều được hoan nghênh! Nếu bạn muốn cải th
 4.  Push lên branch (`git push origin feature/TinhNangMoi`).
 5.  Tạo Pull Request.
 
-## 📄 Giấy phép
-
-Dự án này được phát hành dưới giấy phép [MIT License](LICENSE).
-
 ---
-*Được phát triển bởi [Tên Của Bạn/Team]*
+*Được phát triển bởi Khoa 
 # cong-cu-chuan-hoa-dvkt
