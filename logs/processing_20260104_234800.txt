@@ -1,0 +1,10 @@
+2026-01-04 23:48:20 - INFO - ============================================================
+2026-01-04 23:48:20 - INFO - BẮT ĐẦU XỬ LÝ
+2026-01-04 23:48:20 - INFO - File đầu vào: C:/Users/Administrator/Desktop/DMKT_BINH_MY/Diem 1.xlsx
+2026-01-04 23:48:20 - INFO - Loại xử lý: Loại 2: GIA_HDND → File chuẩn
+2026-01-04 23:48:20 - INFO - ============================================================
+2026-01-04 23:48:21 - WARNING - ✗ Không khớp: '(cột 4)' (Ngưỡng: 80%)
+2026-01-04 23:48:21 - WARNING - ✗ Không khớp: 'Làm test phục hồi máu mao mạch' (Ngưỡng: 80%)
+2026-01-04 23:48:21 - DEBUG - ✓ Khớp: 'Đặt catheter tĩnh mạch ngoại biên' → 'Đặt catheter tĩnh mạch ngoại biên' (Độ chính xác: 100%)
+2026-01-04 23:48:21 - WARNING - ✗ Không khớp: 'Hồi sức chống sốc' (Ngưỡng: 80%)
+2026-01-04 23:48:21 - ERROR - LỖI: single positional indexer is out-of-bounds

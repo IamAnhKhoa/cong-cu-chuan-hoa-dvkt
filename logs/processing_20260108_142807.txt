@@ -1,0 +1,728 @@
+2026-01-08 14:30:54 - INFO - ============================================================
+2026-01-08 14:30:54 - INFO - BẮT ĐẦU XỬ LÝ
+2026-01-08 14:30:54 - INFO - File đầu vào: C:/Users/Administrator/Desktop/Danh mục kĩ thuật/DMKT_PKDK_79764.xlsx
+2026-01-08 14:30:54 - INFO - Loại xử lý: Loại 1: QUY_TRINH → DM_DVKT_TT21_cong
+2026-01-08 14:30:54 - INFO - ============================================================
+2026-01-08 14:30:54 - WARNING - ✗ Không khớp: '(cột 4)' (Ngưỡng: 80%)
+2026-01-08 14:30:55 - WARNING - ✗ Không khớp: 'Làm test phục hồi máu mao mạch' (Ngưỡng: 80%)
+2026-01-08 14:30:55 - DEBUG - ✓ Khớp: 'Đặt catheter tĩnh mạch ngoại biên' → 'Đặt catheter tĩnh mạch ngoại biên' (Độ chính xác: 100%)
+2026-01-08 14:30:55 - WARNING - ✗ Không khớp: 'Chăm sóc catheter tĩnh mạch' (Ngưỡng: 80%)
+2026-01-08 14:30:55 - DEBUG - ✓ Khớp: 'Theo dõi SPO2 liên tục tại giường' → 'Theo dõi SpO2 liên tục tại giường' (Độ chính xác: 100%)
+2026-01-08 14:30:56 - WARNING - ✗ Không khớp: 'Hồi sức chống sốc' (Ngưỡng: 80%)
+2026-01-08 14:30:56 - DEBUG - ✓ Khớp: 'Thở oxy qua gọng kính' → 'Thở oxy gọng kính-HH' (Độ chính xác: 82%)
+2026-01-08 14:30:56 - DEBUG - ✓ Khớp: 'Thở oxy qua mặt nạ không có túi' → 'Thở oxy qua mặt nạ (có túi khí)' (Độ chính xác: 96%)
+2026-01-08 14:30:57 - WARNING - ✗ Không khớp: 'Thở oxy qua mặt nạ có túi có hít lại (túi không có van)' (Ngưỡng: 80%)
+2026-01-08 14:30:57 - WARNING - ✗ Không khớp: 'Thở oxy qua mặt nạ có túi không hít lại (túi có van)' (Ngưỡng: 80%)
+2026-01-08 14:30:57 - DEBUG - ✓ Khớp: 'Thở oxy qua ống chữ T (T-tube)' → 'Thở oxy qua ống chữ T' (Độ chính xác: 86%)
+2026-01-08 14:30:58 - WARNING - ✗ Không khớp: 'Thủ thuật Heimlich (lấy dị vật đường thở) cho người lớn và trẻ em' (Ngưỡng: 80%)
+2026-01-08 14:30:58 - WARNING - Ambiguous match for "Bóp bóng ambu qua mặt nạ": Using first of 6 options
+2026-01-08 14:30:58 - WARNING - Ambiguous match for "Chăm sóc lỗ mở khí quản (một lần)": Using first of 3 options
+2026-01-08 14:30:58 - WARNING - Ambiguous match for "Khí dung thuốc cấp cứu (một lần)": Using first of 2 options
+2026-01-08 14:30:58 - WARNING - Ambiguous match for "Cố định lồng ngực do chấn thương gãy xương sườn": Using first of 3 options
+2026-01-08 14:30:58 - WARNING - Ambiguous match for "Đặt ống thông dẫn lưu bàng quang": Using first of 5 options
+2026-01-08 14:30:58 - WARNING - Ambiguous match for "Thông bàng quang": Using first of 5 options
+2026-01-08 14:30:58 - DEBUG - ✓ Khớp: 'Gây nôn cho người bệnh ngộ độc qua đường tiêu hóa' → 'Quy trình kỹ thuật gây nôn cho Người bệnh ngộ độc qua đường tiêu hóa' (Độ chính xác: 83%)
+2026-01-08 14:30:58 - WARNING - Ambiguous match for "Đặt ống thông dạ dày": Using first of 15 options
+2026-01-08 14:30:58 - WARNING - Ambiguous match for "Rửa dạ dày cấp cứu": Using first of 18 options
+2026-01-08 14:30:58 - WARNING - Ambiguous match for "Siêu âm ổ bụng tại giường cấp cứu": Using first of 7 options
+2026-01-08 14:30:59 - WARNING - ✗ Không khớp: 'Lấy máu tĩnh mạch, tiêm thuốc tĩnh mạch (một lần chọc kim qua da)' (Ngưỡng: 80%)
+2026-01-08 14:30:59 - WARNING - ✗ Không khớp: 'Truyền thuốc, dịch tĩnh mạch' (Ngưỡng: 80%)
+2026-01-08 14:30:59 - WARNING - Ambiguous match for "Lấy máu tĩnh mạch bẹn": Using first of 2 options
+2026-01-08 14:31:00 - WARNING - Ambiguous match for "Thay băng cho các vết thương hoại tử rộng (một lần)": Using first of 2 options
+2026-01-08 14:31:00 - WARNING - ✗ Không khớp: 'Băng ép bất động sơ cứu rắn cắn' (Ngưỡng: 80%)
+2026-01-08 14:31:01 - WARNING - ✗ Không khớp: 'Ga rô hoặc băng ép cầm máu' (Ngưỡng: 80%)
+2026-01-08 14:31:01 - WARNING - ✗ Không khớp: 'Băng bó vết thương' (Ngưỡng: 80%)
+2026-01-08 14:31:01 - DEBUG - ✓ Khớp: 'Cố định tạm thời người bệnh gãy xương' → 'Cố định tạm thời người bệnh gãy xương' (Độ chính xác: 100%)
+2026-01-08 14:31:01 - DEBUG - ✓ Khớp: 'Cố định cột sống cổ bằng nẹp cứng' → 'Cố định cột sống cổ bằng nẹp cứng' (Độ chính xác: 100%)
+2026-01-08 14:31:01 - WARNING - Ambiguous match for "Xét nghiệm đường máu mao mạch tại giường (một lần)": Using first of 4 options
+2026-01-08 14:31:01 - WARNING - Ambiguous match for "Siêu âm cấp cứu tại giường bệnh": Using first of 2 options
+2026-01-08 14:31:01 - WARNING - Ambiguous match for "Bóp bóng ambu qua mặt nạ": Using first of 6 options
+2026-01-08 14:31:02 - WARNING - Ambiguous match for "Chăm sóc lỗ mở khí quản (một lần)": Using first of 3 options
+2026-01-08 14:31:02 - WARNING - Ambiguous match for "Khí dung thuốc giãn phế quản": Using first of 7 options
+2026-01-08 14:31:02 - DEBUG - ✓ Khớp: 'Chăm sóc mắt ở người bệnh liệt VII ngoại biên (một lần)' → 'Chăm sóc mắt ở người bệnh liệt VII ngoại biên (một lần)' (Độ chính xác: 100%)
+2026-01-08 14:31:02 - WARNING - Ambiguous match for "Hút đờm hầu họng": Using first of 3 options
+2026-01-08 14:31:02 - WARNING - Ambiguous match for "Lấy máu tĩnh mạch bẹn": Using first of 2 options
+2026-01-08 14:31:02 - WARNING - Ambiguous match for "Đặt sonde bàng quang": Using first of 6 options
+2026-01-08 14:31:02 - WARNING - Ambiguous match for "Rửa dạ dày cấp cứu": Using first of 18 options
+2026-01-08 14:31:02 - WARNING - Ambiguous match for "Siêu âm ổ bụng": Using first of 7 options
+2026-01-08 14:31:02 - DEBUG - ✓ Khớp: 'Ép tim ngoài lồng ngực' → 'Ép tim ngoài lồng ngực' (Độ chính xác: 100%)
+2026-01-08 14:31:02 - DEBUG - ✓ Khớp: 'Khí dung thuốc cấp cứu' → 'Khí dung thuốc cấp cứu' (Độ chính xác: 100%)
+2026-01-08 14:31:02 - DEBUG - ✓ Khớp: 'Thổi ngạt' → 'Thổi ngạt' (Độ chính xác: 100%)
+2026-01-08 14:31:02 - WARNING - Ambiguous match for "Bóp bóng ambu qua mặt nạ": Using first of 6 options
+2026-01-08 14:31:02 - DEBUG - ✓ Khớp: 'Thủ thuật Heimlich (lấy dị vật đường thở)' → 'Thủ thuật Heimlich (lấy dị vật đường thở)' (Độ chính xác: 100%)
+2026-01-08 14:31:02 - DEBUG - ✓ Khớp: 'Thở oxy gọng kính' → 'Thở oxy gọng kính-HH' (Độ chính xác: 91%)
+2026-01-08 14:31:03 - DEBUG - ✓ Khớp: 'Thở oxy qua mặt nạ có túi' → 'Thở oxy qua mặt nạ (có túi khí)' (Độ chính xác: 94%)
+2026-01-08 14:31:03 - WARNING - Ambiguous match for "Cố định lồng ngực do chấn thương gãy xương sườn": Using first of 3 options
+2026-01-08 14:31:03 - WARNING - Ambiguous match for "Cấp cứu ngừng tuần hoàn hô hấp": Using first of 4 options
+2026-01-08 14:31:03 - DEBUG - ✓ Khớp: 'Cố định cột sống cổ bằng nẹp cứng' → 'Cố định cột sống cổ bằng nẹp cứng' (Độ chính xác: 100%)
+2026-01-08 14:31:03 - DEBUG - ✓ Khớp: 'Cố định tạm thời người bệnh gãy xương' → 'Cố định tạm thời người bệnh gãy xương' (Độ chính xác: 100%)
+2026-01-08 14:31:03 - WARNING - ✗ Không khớp: 'Băng bó vết thương' (Ngưỡng: 80%)
+2026-01-08 14:31:03 - DEBUG - ✓ Khớp: 'Cầm máu (vết thương chảy máu)' → 'Cầm máu (vết thương chảy máu)' (Độ chính xác: 100%)
+2026-01-08 14:31:03 - DEBUG - ✓ Khớp: 'Vận chuyển người bệnh an toàn' → 'Vận chuyển người bệnh an toàn' (Độ chính xác: 100%)
+2026-01-08 14:31:04 - WARNING - ✗ Không khớp: 'Tiêm truyền thuốc' (Ngưỡng: 80%)
+2026-01-08 14:31:04 - WARNING - Ambiguous match for "Tiêm trong da": Using first of 3 options
+2026-01-08 14:31:04 - WARNING - Ambiguous match for "Tiêm dưới da": Using first of 3 options
+2026-01-08 14:31:04 - WARNING - Ambiguous match for "Tiêm bắp thịt": Using first of 3 options
+2026-01-08 14:31:04 - WARNING - Ambiguous match for "Tiêm tĩnh mạch": Using first of 2 options
+2026-01-08 14:31:04 - WARNING - Ambiguous match for "Truyền tĩnh mạch": Using first of 2 options
+2026-01-08 14:31:04 - WARNING - ✗ Không khớp: 'Chăm sóc da điều trị bệnh da' (Ngưỡng: 80%)
+2026-01-08 14:31:04 - DEBUG - ✓ Khớp: 'Điều trị sùi mào gà bằng đốt điện' → 'Điều trị sùi mào gà bằng đốt điện' (Độ chính xác: 100%)
+2026-01-08 14:31:05 - DEBUG - ✓ Khớp: 'Điều trị hạt cơm bằng đốt điện' → 'Quy trình điều trị hạt cơm bằng đốt điện' (Độ chính xác: 87%)
+2026-01-08 14:31:05 - DEBUG - ✓ Khớp: 'Điều trị dày sừng ánh nắng bằng đốt điện' → 'Quy trình điều trị dày sừng ánh nắng bằng đốt điện' (Độ chính xác: 89%)
+2026-01-08 14:31:06 - WARNING - ✗ Không khớp: 'Cấp cứu tự sát' (Ngưỡng: 80%)
+2026-01-08 14:31:06 - WARNING - ✗ Không khớp: 'Test nhanh phát hiện chất opiat trong nước tiểu' (Ngưỡng: 80%)
+2026-01-08 14:31:07 - WARNING - ✗ Không khớp: 'Test nhanh phát hiện chất gây nghiện trong nước tiểu' (Ngưỡng: 80%)
+2026-01-08 14:31:07 - WARNING - Ambiguous match for "Thay băng trên người bệnh đái tháo đường": Using first of 6 options
+2026-01-08 14:31:07 - DEBUG - ✓ Khớp: 'Hướng dẫn kỹ thuật tiêm Insulin' → 'Hướng dẫn kỹ thuật tiêm Insulin' (Độ chính xác: 100%)
+2026-01-08 14:31:07 - WARNING - ✗ Không khớp: 'Hướng dẫn tự chăm sóc bàn chân' (Ngưỡng: 80%)
+2026-01-08 14:31:08 - WARNING - ✗ Không khớp: 'Tư vấn chế độ dinh dưỡng và tập luyện' (Ngưỡng: 80%)
+2026-01-08 14:31:08 - DEBUG - ✓ Khớp: 'Điện nhĩ châm điều trị đau đầu, đau nửa đầu' → 'Điện nhĩ châm điều trị đau đầu, đau nửa đầu' (Độ chính xác: 100%)
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện nhĩ châm điều trị mất ngủ": Using first of 4 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị hội chứng tiền đình": Using first of 8 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị thiểu năng tuần hoàn não mạn tính": Using first of 6 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị hội chứng stress": Using first of 4 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị cảm mạo": Using first of 6 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị trĩ": Using first of 3 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị viêm bàng quang": Using first of 4 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị hội chứng tiền mãn kinh": Using first of 6 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị liệt tứ chi do chấn thương cột sống": Using first of 8 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị rối loạn thần kinh chức năng sau chấn thương sọ não": Using first of 6 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị hội chứng ngoại tháp": Using first of 8 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị khàn tiếng": Using first of 6 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị viêm thần kinh thị giác sau giai đoạn cấp": Using first of 5 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị viêm mũi xoang": Using first of 7 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị rối loạn tiêu hóa": Using first of 3 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị đau do thoái hóa khớp": Using first of 7 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị ù tai": Using first of 5 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị giảm khứu giác": Using first of 6 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị rối loạn thần kinh thực vật": Using first of 9 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị giảm đau do zona": Using first of 7 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Điện châm điều trị liệt do viêm đa rễ, đa dây thần kinh": Using first of 6 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt chi trên": Using first of 6 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt chi dưới": Using first of 6 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt nửa người do tai biến mạch máu não": Using first of 5 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng thắt lưng- hông": Using first of 4 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt do viêm não": Using first of 4 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị cứng khớp chi trên": Using first of 5 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị cứng khớp chi dưới": Using first of 5 options
+2026-01-08 14:31:08 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị choáng, ngất": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị chứng ù tai": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị giảm khứu giác": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt do bệnh của cơ": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị tâm căn suy nhược": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng ngoại tháp": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đau đầu, đau nửa đầu": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị mất ngủ": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng stress": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị thiểu năng tuần hoàn não mạn tính": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị tổn thương rễ, đám rối và dây thần kinh": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị tổn thương dây thần kinh V": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt dây thần kinh số VII ngoại biên": Using first of 7 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị sụp mi": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị viêm thần kinh thị giác sau giai đoạn cấp": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng tiền đình": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị viêm mũi xoang": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hen phế quản": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt hỗ trợ điều trị tăng huyết áp": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị huyết áp thấp": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đau thần kinh liên sườn": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng dạ dày- tá tràng": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị nấc": Using first of 2 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị viêm khớp dạng thấp": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đau do thoái hóa khớp": Using first of 2 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đau lưng": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị viêm quanh khớp vai": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng vai gáy": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị chứng tic cơ mặt": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị rối loạn cảm giác đầu chi": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị rối loạn kinh nguyệt": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đau bụng kinh": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng tiền mãn kinh": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị táo bón": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị rối loạn tiêu hóa": Using first of 2 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị rối loạn cảm giác nông": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị bí đái cơ năng": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị rối loạn thần kinh thực vật": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị béo phì": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị rối loạn chức năng vận động do chấn thương sọ não": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt tứ chi do chấn thương cột sống": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị giảm đau sau phẫu thuật": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị giảm đau do ung thư": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đái dầm": Using first of 4 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng phân ly": Using first of 3 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Cứu điều trị hội chứng thắt lưng- hông thể phong hàn": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Cứu điều trị đau đầu, đau nửa đầu thể hàn": Using first of 5 options
+2026-01-08 14:31:09 - WARNING - Ambiguous match for "Cứu điều trị nấc thể hàn": Using first of 4 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị ngoại cảm phong hàn": Using first of 4 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị khàn tiếng thể hàn": Using first of 5 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị liệt nửa người thể hàn": Using first of 5 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị liệt dây thần kinh số VII ngoại biên thể hàn": Using first of 6 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị đau vai gáy cấp thể hàn": Using first of 5 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị giảm thính lực thể hàn": Using first of 3 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị rối loạn tiểu tiện thể hàn": Using first of 3 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị sa tử cung thể hàn": Using first of 3 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị đau bụng kinh thể hàn": Using first of 3 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị rối loạn kinh nguyệt thể hàn": Using first of 3 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị đau lưng thể hàn": Using first of 5 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị giảm khứu giác thể hàn": Using first of 4 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị rối loạn thần kinh thực vật thể hàn": Using first of 4 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị cảm cúm thể hàn": Using first of 4 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Cứu điều trị rối loạn tiêu hóa thể hàn": Using first of 4 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Thay băng điều trị vết bỏng dưới 10% diện tích cơ thể ở người lớn": Using first of 8 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Khám người bệnh bỏng, chẩn đoán diện tích và độ sâu bỏng bằng lâm sàng": Using first of 2 options
+2026-01-08 14:31:10 - WARNING - Ambiguous match for "Sơ cứu, cấp cứu tổn thương bỏng nhiệt": Using first of 2 options
+2026-01-08 14:31:11 - WARNING - Ambiguous match for "Xử lí tại chỗ kì đầu tổn thương bỏng": Using first of 2 options
+2026-01-08 14:31:11 - WARNING - Ambiguous match for "Sơ cấp cứu bỏng do vôi tôi nóng": Using first of 2 options
+2026-01-08 14:31:11 - WARNING - Ambiguous match for "Sơ cấp cứu bỏng acid": Using first of 2 options
+2026-01-08 14:31:11 - WARNING - Ambiguous match for "Sơ cấp cứu bỏng do dòng điện": Using first of 2 options
+2026-01-08 14:31:11 - DEBUG - ✓ Khớp: 'Đặt dây truyền dịch ngoại vi điều trị người bệnh bỏng' → 'Đặt dây truyền dịch ngoại vi điều trị bệnh nhân bỏng' (Độ chính xác: 94%)
+2026-01-08 14:31:11 - DEBUG - ✓ Khớp: 'Làm thuốc vết khâu tầng sinh môn nhiễm khuẩn' → 'Làm thuốc vết khâu tầng sinh môn nhiễm khuẩn' (Độ chính xác: 100%)
+2026-01-08 14:31:12 - DEBUG - ✓ Khớp: 'Khám thai' → 'Khám Nhi' (Độ chính xác: 80%)
+2026-01-08 14:31:12 - WARNING - ✗ Không khớp: 'Trích áp xe tầng sinh môn' (Ngưỡng: 80%)
+2026-01-08 14:31:13 - DEBUG - ✓ Khớp: 'Trích áp xe tuyến Bartholin' → 'Chích áp xe tuyến Bartholin' (Độ chính xác: 84%)
+2026-01-08 14:31:13 - WARNING - ✗ Không khớp: 'Khám phụ khoa' (Ngưỡng: 80%)
+2026-01-08 14:31:13 - WARNING - Ambiguous match for "Soi cổ tử cung": Using first of 2 options
+2026-01-08 14:31:14 - WARNING - ✗ Không khớp: 'Làm thuốc âm đạo' (Ngưỡng: 80%)
+2026-01-08 14:31:14 - WARNING - ✗ Không khớp: 'Khám sơ sinh' (Ngưỡng: 80%)
+2026-01-08 14:31:14 - DEBUG - ✓ Khớp: 'Chăm sóc rốn sơ sinh' → 'Chăm sóc rốn sơ sinh' (Độ chính xác: 100%)
+2026-01-08 14:31:14 - DEBUG - ✓ Khớp: 'Tắm sơ sinh' → 'Tắm sơ sinh' (Độ chính xác: 100%)
+2026-01-08 14:31:14 - DEBUG - ✓ Khớp: 'Đặt và tháo dụng cụ tử cung' → 'Đặt và tháo dụng cụ tử cung' (Độ chính xác: 100%)
+2026-01-08 14:31:15 - WARNING - ✗ Không khớp: 'Phá thai từ tuần thứ 6 đến hết 12 tuần bằng phương pháp hút chân không' (Ngưỡng: 80%)
+2026-01-08 14:31:15 - WARNING - Ambiguous match for "Phá thai bằng thuốc cho tuổi thai đến hết 7 tuần": Using first of 2 options
+2026-01-08 14:31:16 - WARNING - ✗ Không khớp: 'Phá thai đến hết 7 tuần bằng phương pháp hút chân không' (Ngưỡng: 80%)
+2026-01-08 14:31:16 - WARNING - Ambiguous match for "Siêu âm ổ bụng (gan mật, tụy, lách, thận, bàng quang)": Using first of 3 options
+2026-01-08 14:31:16 - WARNING - Ambiguous match for "Siêu âm tử cung phần phụ": Using first of 3 options
+2026-01-08 14:31:16 - WARNING - Ambiguous match for "Siêu âm thai (thai, nhau thai, nước ối)": Using first of 2 options
+2026-01-08 14:31:16 - WARNING - Ambiguous match for "Siêu âm tử cung buồng trứng qua đường bụng": Using first of 3 options
+2026-01-08 14:31:16 - WARNING - Ambiguous match for "Siêu âm tử cung buồng trứng qua đường âm đạo": Using first of 2 options
+2026-01-08 14:31:16 - WARNING - Ambiguous match for "Siêu âm thai nhi trong 3 tháng đầu": Using first of 3 options
+2026-01-08 14:31:16 - WARNING - Ambiguous match for "Siêu âm thai nhi trong 3 tháng giữa": Using first of 3 options
+2026-01-08 14:31:16 - WARNING - Ambiguous match for "Siêu âm thai nhi trong 3 tháng cuối": Using first of 3 options
+2026-01-08 14:31:16 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống cổ C1-C2' → 'Chụp X quang đốt sống cổ C1 – C2' (Độ chính xác: 87%)
+2026-01-08 14:31:17 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống ngực thẳng nghiêng hoặc chếch' → 'Chụp Xquang cột sống ngực thẳng nghiêng hoặc chếch' (Độ chính xác: 89%)
+2026-01-08 14:31:17 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống thắt lưng thẳng nghiêng' → 'Chụp Xquang cột sống thắt lưng thẳng nghiêng' (Độ chính xác: 87%)
+2026-01-08 14:31:18 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống thắt lưng chếch hai bên' → 'Chụp Xquang cột sống thắt lưng chếch hai bên' (Độ chính xác: 87%)
+2026-01-08 14:31:18 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống thắt lưng L5-S1 thẳng nghiêng' → 'Chụp Xquang cột sống thắt lưng L5-S1 thẳng nghiêng' (Độ chính xác: 89%)
+2026-01-08 14:31:19 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống cùng cụt thẳng nghiêng' → 'Chụp Xquang cột sống cùng cụt thẳng nghiêng' (Độ chính xác: 87%)
+2026-01-08 14:31:19 - DEBUG - ✓ Khớp: 'Chụp X-quang khung chậu thẳng' → 'Chụp Xquang khung chậu thẳng' (Độ chính xác: 81%)
+2026-01-08 14:31:20 - DEBUG - ✓ Khớp: 'Chụp X-quang xương đòn thẳng hoặc chếch' → 'Chụp Xquang xương đòn thẳng hoặc chếch' (Độ chính xác: 85%)
+2026-01-08 14:31:20 - WARNING - ✗ Không khớp: 'Chụp X-quang khớp vai thẳng' (Ngưỡng: 80%)
+2026-01-08 14:31:21 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp vai nghiêng hoặc chếch' → 'Chụp Xquang khớp vai nghiêng hoặc chếch' (Độ chính xác: 86%)
+2026-01-08 14:31:22 - DEBUG - ✓ Khớp: 'Chụp X-quang xương bả vai thẳng nghiêng' → 'Chụp Xquang xương bả vai thẳng nghiêng' (Độ chính xác: 85%)
+2026-01-08 14:31:22 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cánh tay thẳng nghiêng' → 'Chụp Xquang xương cánh tay thẳng nghiêng' (Độ chính xác: 86%)
+2026-01-08 14:31:23 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp khuỷu thẳng, nghiêng hoặc chếch' → 'Chụp Xquang khớp khuỷu thẳng, nghiêng hoặc chếch' (Độ chính xác: 88%)
+2026-01-08 14:31:23 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cẳng tay thẳng nghiêng' → 'Chụp Xquang xương cẳng tay thẳng nghiêng' (Độ chính xác: 86%)
+2026-01-08 14:31:24 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cổ tay thẳng, nghiêng hoặc chếch' → 'Chụp Xquang xương cổ tay thẳng, nghiêng hoặc chếch' (Độ chính xác: 89%)
+2026-01-08 14:31:24 - DEBUG - ✓ Khớp: 'Chụp X-quang xương bàn ngón tay thẳng, nghiêng hoặc chếch' → 'Chụp Xquang xương bàn ngón tay thẳng, nghiêng hoặc chếch' (Độ chính xác: 90%)
+2026-01-08 14:31:25 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp háng thẳng hai bên' → 'Chụp Xquang khớp háng thẳng hai bên' (Độ chính xác: 84%)
+2026-01-08 14:31:25 - WARNING - Ambiguous match for "Chụp X-quang khớp háng nghiêng": Using first of 3 options
+2026-01-08 14:31:25 - DEBUG - ✓ Khớp: 'Chụp X-quang xương đùi thẳng nghiêng' → 'Chụp Xquang xương đùi thẳng nghiêng' (Độ chính xác: 84%)
+2026-01-08 14:31:26 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp gối thẳng, nghiêng hoặc chếch' → 'Chụp Xquang khớp gối thẳng, nghiêng hoặc chếch' (Độ chính xác: 88%)
+2026-01-08 14:31:26 - DEBUG - ✓ Khớp: 'Chụp X-quang xương bánh chè và khớp đùi bánh chè' → 'Chụp Xquang xương bánh chè và khớp đùi bánh chè' (Độ chính xác: 92%)
+2026-01-08 14:31:27 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cẳng chân thẳng nghiêng' → 'Chụp Xquang xương cẳng chân thẳng nghiêng' (Độ chính xác: 86%)
+2026-01-08 14:31:27 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cổ chân thẳng, nghiêng hoặc chếch' → 'Chụp Xquang xương cổ chân thẳng, nghiêng hoặc chếch' (Độ chính xác: 89%)
+2026-01-08 14:31:28 - DEBUG - ✓ Khớp: 'Chụp X-quang xương bàn, ngón chân thẳng, nghiêng hoặc chếch' → 'Chụp Xquang xương bàn, ngón chân thẳng, nghiêng hoặc chếch' (Độ chính xác: 90%)
+2026-01-08 14:31:28 - DEBUG - ✓ Khớp: 'Chụp X-quang xương gót thẳng nghiêng' → 'Chụp Xquang xương gót thẳng nghiêng' (Độ chính xác: 84%)
+2026-01-08 14:31:29 - WARNING - ✗ Không khớp: 'Chụp X-quang ngực thẳng' (Ngưỡng: 80%)
+2026-01-08 14:31:29 - WARNING - Ambiguous match for "Chụp X-quang ngực nghiêng hoặc chếch mỗi bên": Using first of 3 options
+2026-01-08 14:31:30 - DEBUG - ✓ Khớp: 'Chụp X-quang đỉnh phổi ưỡn' → 'Chụp Xquang đỉnh phổi ưỡn' (Độ chính xác: 94%)
+2026-01-08 14:31:30 - WARNING - Ambiguous match for "Thời gian máu chảy phương pháp Duke": Using first of 2 options
+2026-01-08 14:31:30 - WARNING - Ambiguous match for "Thời gian máu chảy phương pháp Ivy": Using first of 2 options
+2026-01-08 14:31:30 - WARNING - ✗ Không khớp: 'Nghiệm pháp dây thắt' (Ngưỡng: 80%)
+2026-01-08 14:31:31 - WARNING - ✗ Không khớp: 'Dàn tiêu bản máu ngoại vi (Phết máu ngoại vi)' (Ngưỡng: 80%)
+2026-01-08 14:31:31 - WARNING - Ambiguous match for "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm tổng trở)": Using first of 3 options
+2026-01-08 14:31:31 - WARNING - Ambiguous match for "Tìm ký sinh trùng sốt rét trong máu (bằng phương pháp thủ công)": Using first of 6 options
+2026-01-08 14:31:31 - WARNING - Ambiguous match for "Máu lắng (bằng phương pháp thủ công)": Using first of 3 options
+2026-01-08 14:31:31 - WARNING - Ambiguous match for "Xét nghiệm tế bào cặn nước tiểu (bằng phương pháp thủ công)": Using first of 2 options
+2026-01-08 14:31:31 - DEBUG - ✓ Khớp: 'Cặn Addis' → 'Cặn Addis' (Độ chính xác: 100%)
+2026-01-08 14:31:31 - WARNING - Ambiguous match for "Định nhóm máu hệ ABO (kỹ thuật ống nghiệm)": Using first of 5 options
+2026-01-08 14:31:31 - DEBUG - ✓ Khớp: 'Định nhóm máu hệ ABO (kỹ thuật phiến đá)' → 'Định nhóm máu hệ ABO (Kỹ thuật phiến đá)' (Độ chính xác: 100%)
+2026-01-08 14:31:31 - WARNING - ✗ Không khớp: 'Định nhóm máu hệ ABO (kỹ thuật trên giấy)' (Ngưỡng: 80%)
+2026-01-08 14:31:32 - DEBUG - ✓ Khớp: 'Định nhóm máu hệ ABO (kỹ thuật trên thẻ)' → 'Định nhóm máu hệ ABO (Kỹ thuật phiến đá)' (Độ chính xác: 80%)
+2026-01-08 14:31:32 - DEBUG - ✓ Khớp: 'Định nhóm máu hệ Rh(D) (kỹ thuật phiến đá)' → 'Định nhóm máu hệ Rh(D) (Kỹ thuật phiến đá)' (Độ chính xác: 100%)
+2026-01-08 14:31:32 - WARNING - Ambiguous match for "Định lượng Acid Uric [Máu]": Using first of 7 options
+2026-01-08 14:31:32 - WARNING - Ambiguous match for "Định lượng Albumin [Máu]": Using first of 8 options
+2026-01-08 14:31:32 - WARNING - Ambiguous match for "Đo hoạt độ ALP (Alkalin Phosphatase) [Máu]": Using first of 8 options
+2026-01-08 14:31:32 - WARNING - Ambiguous match for "Đo hoạt độ Amylase [Máu]": Using first of 10 options
+2026-01-08 14:31:32 - WARNING - Ambiguous match for "Đo hoạt độ ALT (GPT) [Máu]": Using first of 7 options
+2026-01-08 14:31:32 - WARNING - Ambiguous match for "Đo hoạt độ AST (GOT) [Máu]": Using first of 8 options
+2026-01-08 14:31:32 - WARNING - Ambiguous match for "Định lượng Bilirubin trực tiếp [Máu]": Using first of 7 options
+2026-01-08 14:31:32 - WARNING - Ambiguous match for "Định lượng Bilirubin gián tiếp [Máu]": Using first of 3 options
+2026-01-08 14:31:32 - WARNING - Ambiguous match for "Định lượng Bilirubin toàn phần [Máu]": Using first of 13 options
+2026-01-08 14:31:33 - DEBUG - ✓ Khớp: 'Định lượng Canxi toàn phần [Máu]' → 'Định lượng Calci toàn phần [Máu]' (Độ chính xác: 93%)
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng Cholesterol toàn phần (máu)": Using first of 7 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng Creatinin (máu)": Using first of 6 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Điện giải đồ (Na, K, Cl) [Máu]": Using first of 7 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng Glucose [Máu]": Using first of 10 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng Globulin [Máu]": Using first of 3 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Đo hoạt độ GGT (Gama Glutamyl Transferase) [Máu]": Using first of 7 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng HbA1c [Máu]": Using first of 8 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng HDL-C (High density lipoprotein Cholesterol) [Máu]": Using first of 8 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng LDL-C (Low density lipoprotein Cholesterol) [Máu]": Using first of 5 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng Protein toàn phần [Máu]": Using first of 8 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng Sắt [Máu]": Using first of 6 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng Triglycerid (máu) [Máu]": Using first of 7 options
+2026-01-08 14:31:33 - WARNING - Ambiguous match for "Định lượng Urê máu [Máu]": Using first of 6 options
+2026-01-08 14:31:34 - WARNING - Ambiguous match for "Điện giải (Na, K, Cl) [niệu]": Using first of 5 options
+2026-01-08 14:31:34 - WARNING - Ambiguous match for "Định tính Amphetamine (test nhanh) [niệu]": Using first of 5 options
+2026-01-08 14:31:35 - WARNING - Ambiguous match for "Định lượng Amylase [niệu]": Using first of 5 options
+2026-01-08 14:31:35 - DEBUG - ✓ Khớp: 'Định tính beta hCG (test nhanh) [niệu]' → 'Định tính Amphetamin (test nhanh) [niệu]' (Độ chính xác: 82%)
+2026-01-08 14:31:35 - WARNING - Ambiguous match for "Định lượng Creatinin (niệu)": Using first of 5 options
+2026-01-08 14:31:35 - DEBUG - ✓ Khớp: 'Định lượng Glucose (niệu)' → 'Định lượng Glucose (niệu)' (Độ chính xác: 100%)
+2026-01-08 14:31:35 - WARNING - Ambiguous match for "Định tính Marijuana (THC) (test nhanh) [niệu]": Using first of 7 options
+2026-01-08 14:31:35 - WARNING - Ambiguous match for "Định tính Opiate (test nhanh) [niệu]": Using first of 6 options
+2026-01-08 14:31:35 - WARNING - Ambiguous match for "Định tính Morphin (test nhanh) [niệu]": Using first of 7 options
+2026-01-08 14:31:36 - DEBUG - ✓ Khớp: 'Định tính Heroin (test nhanh) [niệu]' → 'Định tính Codein (test nhanh) [niệu]' (Độ chính xác: 90%)
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Định lượng Urê (niệu)": Using first of 5 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Tổng phân tích nước tiểu (Bằng máy tự động)": Using first of 8 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Vi khuẩn nhuộm soi": Using first of 8 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "AFB trực tiếp nhuộm Ziehl-Neelsen": Using first of 8 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Mycobacterium tuberculosis Mantoux": Using first of 6 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Mycobacterium tuberculosis định danh và kháng RMP Xpert": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Neisseria gonorrhoeae nhuộm soi": Using first of 6 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Treponema pallidum test nhanh": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Treponema pallidum RPR định tính và định lượng": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HBsAg test nhanh": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HBsAb test nhanh": Using first of 2 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HBcAb test nhanh": Using first of 2 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HBeAg test nhanh": Using first of 6 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HBeAb test nhanh": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HCV Ab test nhanh": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HAV Ab test nhanh": Using first of 3 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HEV Ab test nhanh": Using first of 2 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HEV IgM test nhanh": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HIV Ab test nhanh": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HIV Ag/Ab test nhanh": Using first of 2 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "HIV khẳng định (*)": Using first of 4 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Dengue virus NS1Ag test nhanh": Using first of 8 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Hồng cầu, bạch cầu trong phân soi tươi": Using first of 8 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Đơn bào đường ruột soi tươi": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Trứng giun, sán soi tươi": Using first of 8 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Trứng giun soi tập trung": Using first of 4 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Strongyloides stercoralis (Giun lươn) ấu trùng soi tươi": Using first of 6 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Plasmodium (Ký sinh trùng sốt rét) nhuộm soi định tính": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Plasmodium (Ký sinh trùng sốt rét) Ag test nhanh": Using first of 6 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Trichomonas vaginalis soi tươi": Using first of 7 options
+2026-01-08 14:31:36 - WARNING - Ambiguous match for "Trichomonas vaginalis nhuộm soi": Using first of 4 options
+2026-01-08 14:31:37 - INFO - Đã xuất 238 bản ghi không khớp ra: C:/Users/Administrator/Desktop/Danh mục kĩ thuật/DMKT_PKDK_79764_Luong1_unmatched.xlsx
+2026-01-08 14:31:37 - INFO - ============================================================
+2026-01-08 14:31:37 - INFO - KẾT THÚC XỬ LÝ
+2026-01-08 14:31:37 - INFO - Tổng số bản ghi: 301
+2026-01-08 14:31:37 - INFO - Khớp thành công: 63
+2026-01-08 14:31:37 - INFO - Không khớp: 31
+2026-01-08 14:31:37 - INFO - Tỷ lệ khớp: 20.9%
+2026-01-08 14:31:37 - INFO - ============================================================
+2026-01-08 14:32:19 - INFO - ============================================================
+2026-01-08 14:32:19 - INFO - BẮT ĐẦU XỬ LÝ
+2026-01-08 14:32:19 - INFO - File đầu vào: C:/Users/Administrator/Desktop/Danh mục kĩ thuật/DMKT_PKDK_79764.xlsx
+2026-01-08 14:32:19 - INFO - Loại xử lý: Loại 2: GIA_HDND → File chuẩn
+2026-01-08 14:32:19 - INFO - ============================================================
+2026-01-08 14:32:20 - WARNING - ✗ Không khớp: '(cột 4)' (Ngưỡng: 80%)
+2026-01-08 14:32:20 - WARNING - ✗ Không khớp: 'Làm test phục hồi máu mao mạch' (Ngưỡng: 80%)
+2026-01-08 14:32:20 - DEBUG - ✓ Khớp: 'Đặt catheter tĩnh mạch ngoại biên' → 'Đặt catheter tĩnh mạch ngoại biên' (Độ chính xác: 100%)
+2026-01-08 14:32:20 - WARNING - ✗ Không khớp: 'Chăm sóc catheter tĩnh mạch' (Ngưỡng: 80%)
+2026-01-08 14:32:20 - WARNING - ✗ Không khớp: 'Theo dõi SPO2 liên tục tại giường' (Ngưỡng: 80%)
+2026-01-08 14:32:20 - WARNING - ✗ Không khớp: 'Hồi sức chống sốc' (Ngưỡng: 80%)
+2026-01-08 14:32:21 - WARNING - ✗ Không khớp: 'Thở oxy qua gọng kính' (Ngưỡng: 80%)
+2026-01-08 14:32:21 - WARNING - ✗ Không khớp: 'Thở oxy qua mặt nạ không có túi' (Ngưỡng: 80%)
+2026-01-08 14:32:21 - WARNING - ✗ Không khớp: 'Thở oxy qua mặt nạ có túi có hít lại (túi không có van)' (Ngưỡng: 80%)
+2026-01-08 14:32:22 - WARNING - ✗ Không khớp: 'Thở oxy qua mặt nạ có túi không hít lại (túi có van)' (Ngưỡng: 80%)
+2026-01-08 14:32:22 - WARNING - ✗ Không khớp: 'Thở oxy qua ống chữ T (T-tube)' (Ngưỡng: 80%)
+2026-01-08 14:32:22 - WARNING - ✗ Không khớp: 'Thủ thuật Heimlich (lấy dị vật đường thở) cho người lớn và trẻ em' (Ngưỡng: 80%)
+2026-01-08 14:32:22 - DEBUG - ✓ Khớp: 'Bóp bóng ambu qua mặt nạ' → 'Bóp bóng ambu qua mặt nạ' (Độ chính xác: 100%)
+2026-01-08 14:32:22 - DEBUG - ✓ Khớp: 'Chăm sóc lỗ mở khí quản (một lần)' → 'Chăm sóc lỗ mở khí quản (một lần)' (Độ chính xác: 100%)
+2026-01-08 14:32:23 - DEBUG - ✓ Khớp: 'Khí dung thuốc cấp cứu (một lần)' → 'Khí dung thuốc cấp cứu (một lần)' (Độ chính xác: 100%)
+2026-01-08 14:32:23 - WARNING - Ambiguous match for "Cố định lồng ngực do chấn thương gãy xương sườn": Using first of 1 options
+2026-01-08 14:32:23 - DEBUG - ✓ Khớp: 'Cố định lồng ngực do chấn thương gãy xương sườn' → 'Cố định lồng ngực do chấn thương gãy xương sườn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:23 - DEBUG - ✓ Khớp: 'Đặt ống thông dẫn lưu bàng quang' → 'Đặt ống thông dẫn lưu bàng quang' (Độ chính xác: 100%)
+2026-01-08 14:32:23 - DEBUG - ✓ Khớp: 'Thông bàng quang' → 'Thông bàng quang' (Độ chính xác: 100%)
+2026-01-08 14:32:23 - WARNING - ✗ Không khớp: 'Gây nôn cho người bệnh ngộ độc qua đường tiêu hóa' (Ngưỡng: 80%)
+2026-01-08 14:32:23 - WARNING - Ambiguous match for "Đặt ống thông dạ dày": Using first of 1 options
+2026-01-08 14:32:23 - DEBUG - ✓ Khớp: 'Đặt ống thông dạ dày' → 'Đặt ống thông dạ dày (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:23 - WARNING - Ambiguous match for "Rửa dạ dày cấp cứu": Using first of 1 options
+2026-01-08 14:32:23 - DEBUG - ✓ Khớp: 'Rửa dạ dày cấp cứu' → 'Rửa dạ dày cấp cứu (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:23 - DEBUG - ✓ Khớp: 'Siêu âm ổ bụng tại giường cấp cứu' → 'Siêu âm ổ bụng tại giường cấp cứu' (Độ chính xác: 100%)
+2026-01-08 14:32:23 - WARNING - ✗ Không khớp: 'Lấy máu tĩnh mạch, tiêm thuốc tĩnh mạch (một lần chọc kim qua da)' (Ngưỡng: 80%)
+2026-01-08 14:32:24 - WARNING - ✗ Không khớp: 'Truyền thuốc, dịch tĩnh mạch' (Ngưỡng: 80%)
+2026-01-08 14:32:24 - WARNING - ✗ Không khớp: 'Lấy máu tĩnh mạch bẹn' (Ngưỡng: 80%)
+2026-01-08 14:32:24 - WARNING - Ambiguous match for "Thay băng cho các vết thương hoại tử rộng (một lần)": Using first of 4 options
+2026-01-08 14:32:24 - DEBUG - ✓ Khớp: 'Thay băng cho các vết thương hoại tử rộng (một lần)' → 'Thay băng cho các vết thương hoại tử rộng (một lần) (⚠️ 4 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:24 - WARNING - ✗ Không khớp: 'Băng ép bất động sơ cứu rắn cắn' (Ngưỡng: 80%)
+2026-01-08 14:32:25 - WARNING - ✗ Không khớp: 'Ga rô hoặc băng ép cầm máu' (Ngưỡng: 80%)
+2026-01-08 14:32:25 - WARNING - ✗ Không khớp: 'Băng bó vết thương' (Ngưỡng: 80%)
+2026-01-08 14:32:25 - WARNING - ✗ Không khớp: 'Cố định tạm thời người bệnh gãy xương' (Ngưỡng: 80%)
+2026-01-08 14:32:26 - WARNING - ✗ Không khớp: 'Cố định cột sống cổ bằng nẹp cứng' (Ngưỡng: 80%)
+2026-01-08 14:32:26 - DEBUG - ✓ Khớp: 'Xét nghiệm đường máu mao mạch tại giường (một lần)' → 'Xét nghiệm đường máu mao mạch tại giường (một lần)' (Độ chính xác: 100%)
+2026-01-08 14:32:26 - DEBUG - ✓ Khớp: 'Siêu âm cấp cứu tại giường bệnh' → 'Siêu âm cấp cứu tại giường bệnh' (Độ chính xác: 100%)
+2026-01-08 14:32:26 - DEBUG - ✓ Khớp: 'Bóp bóng ambu qua mặt nạ' → 'Bóp bóng ambu qua mặt nạ' (Độ chính xác: 100%)
+2026-01-08 14:32:26 - DEBUG - ✓ Khớp: 'Chăm sóc lỗ mở khí quản (một lần)' → 'Chăm sóc lỗ mở khí quản (một lần)' (Độ chính xác: 100%)
+2026-01-08 14:32:26 - DEBUG - ✓ Khớp: 'Khí dung thuốc giãn phế quản' → 'Khí dung thuốc giãn phế quản' (Độ chính xác: 100%)
+2026-01-08 14:32:26 - WARNING - ✗ Không khớp: 'Chăm sóc mắt ở người bệnh liệt VII ngoại biên (một lần)' (Ngưỡng: 80%)
+2026-01-08 14:32:26 - DEBUG - ✓ Khớp: 'Hút đờm hầu họng' → 'Hút đờm hầu họng' (Độ chính xác: 100%)
+2026-01-08 14:32:26 - WARNING - ✗ Không khớp: 'Lấy máu tĩnh mạch bẹn' (Ngưỡng: 80%)
+2026-01-08 14:32:27 - DEBUG - ✓ Khớp: 'Đặt sonde bàng quang' → 'Đặt sonde bàng quang' (Độ chính xác: 100%)
+2026-01-08 14:32:27 - WARNING - Ambiguous match for "Rửa dạ dày cấp cứu": Using first of 1 options
+2026-01-08 14:32:27 - DEBUG - ✓ Khớp: 'Rửa dạ dày cấp cứu' → 'Rửa dạ dày cấp cứu (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:27 - DEBUG - ✓ Khớp: 'Siêu âm ổ bụng' → 'Siêu âm ổ bụng' (Độ chính xác: 100%)
+2026-01-08 14:32:27 - WARNING - ✗ Không khớp: 'Ép tim ngoài lồng ngực' (Ngưỡng: 80%)
+2026-01-08 14:32:27 - DEBUG - ✓ Khớp: 'Khí dung thuốc cấp cứu' → 'Khí dung thuốc cấp cứu' (Độ chính xác: 100%)
+2026-01-08 14:32:27 - WARNING - ✗ Không khớp: 'Thổi ngạt' (Ngưỡng: 80%)
+2026-01-08 14:32:27 - DEBUG - ✓ Khớp: 'Bóp bóng ambu qua mặt nạ' → 'Bóp bóng ambu qua mặt nạ' (Độ chính xác: 100%)
+2026-01-08 14:32:28 - WARNING - ✗ Không khớp: 'Thủ thuật Heimlich (lấy dị vật đường thở)' (Ngưỡng: 80%)
+2026-01-08 14:32:28 - WARNING - ✗ Không khớp: 'Thở oxy gọng kính' (Ngưỡng: 80%)
+2026-01-08 14:32:28 - WARNING - ✗ Không khớp: 'Thở oxy qua mặt nạ có túi' (Ngưỡng: 80%)
+2026-01-08 14:32:28 - WARNING - Ambiguous match for "Cố định lồng ngực do chấn thương gãy xương sườn": Using first of 1 options
+2026-01-08 14:32:28 - DEBUG - ✓ Khớp: 'Cố định lồng ngực do chấn thương gãy xương sườn' → 'Cố định lồng ngực do chấn thương gãy xương sườn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:28 - DEBUG - ✓ Khớp: 'Cấp cứu ngừng tuần hoàn hô hấp' → 'Cấp cứu ngừng tuần hoàn hô hấp' (Độ chính xác: 100%)
+2026-01-08 14:32:29 - WARNING - ✗ Không khớp: 'Cố định cột sống cổ bằng nẹp cứng' (Ngưỡng: 80%)
+2026-01-08 14:32:29 - WARNING - ✗ Không khớp: 'Cố định tạm thời người bệnh gãy xương' (Ngưỡng: 80%)
+2026-01-08 14:32:29 - WARNING - ✗ Không khớp: 'Băng bó vết thương' (Ngưỡng: 80%)
+2026-01-08 14:32:29 - WARNING - ✗ Không khớp: 'Cầm máu (vết thương chảy máu)' (Ngưỡng: 80%)
+2026-01-08 14:32:30 - WARNING - ✗ Không khớp: 'Vận chuyển người bệnh an toàn' (Ngưỡng: 80%)
+2026-01-08 14:32:30 - WARNING - ✗ Không khớp: 'Tiêm truyền thuốc' (Ngưỡng: 80%)
+2026-01-08 14:32:30 - DEBUG - ✓ Khớp: 'Tiêm trong da' → 'Tiêm trong da' (Độ chính xác: 100%)
+2026-01-08 14:32:30 - DEBUG - ✓ Khớp: 'Tiêm dưới da' → 'Tiêm dưới da' (Độ chính xác: 100%)
+2026-01-08 14:32:30 - DEBUG - ✓ Khớp: 'Tiêm bắp thịt' → 'Tiêm bắp thịt' (Độ chính xác: 100%)
+2026-01-08 14:32:30 - DEBUG - ✓ Khớp: 'Tiêm tĩnh mạch' → 'Tiêm tĩnh mạch' (Độ chính xác: 100%)
+2026-01-08 14:32:30 - DEBUG - ✓ Khớp: 'Truyền tĩnh mạch' → 'Truyền tĩnh mạch' (Độ chính xác: 100%)
+2026-01-08 14:32:31 - WARNING - ✗ Không khớp: 'Chăm sóc da điều trị bệnh da' (Ngưỡng: 80%)
+2026-01-08 14:32:31 - DEBUG - ✓ Khớp: 'Điều trị sùi mào gà bằng đốt điện' → 'Điều trị sùi mào gà bằng đốt điện' (Độ chính xác: 100%)
+2026-01-08 14:32:31 - DEBUG - ✓ Khớp: 'Điều trị hạt cơm bằng đốt điện' → 'Điều trị hạt cơm bằng đốt điện' (Độ chính xác: 100%)
+2026-01-08 14:32:31 - DEBUG - ✓ Khớp: 'Điều trị dày sừng ánh nắng bằng đốt điện' → 'Điều trị dày sừng ánh nắng bằng đốt điện' (Độ chính xác: 100%)
+2026-01-08 14:32:31 - WARNING - ✗ Không khớp: 'Cấp cứu tự sát' (Ngưỡng: 80%)
+2026-01-08 14:32:31 - DEBUG - ✓ Khớp: 'Test nhanh phát hiện chất opiat trong nước tiểu' → 'Test nhanh phát hiện chất opiat trong nước tiểu' (Độ chính xác: 100%)
+2026-01-08 14:32:31 - DEBUG - ✓ Khớp: 'Test nhanh phát hiện chất gây nghiện trong nước tiểu' → 'Test nhanh phát hiện chất opiat trong nước tiểu' (Độ chính xác: 83%)
+2026-01-08 14:32:31 - WARNING - Ambiguous match for "Thay băng trên người bệnh đái tháo đường": Using first of 7 options
+2026-01-08 14:32:31 - DEBUG - ✓ Khớp: 'Thay băng trên người bệnh đái tháo đường' → 'Thay băng trên người bệnh đái tháo đường (⚠️ 7 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:32 - WARNING - ✗ Không khớp: 'Hướng dẫn kỹ thuật tiêm Insulin' (Ngưỡng: 80%)
+2026-01-08 14:32:32 - WARNING - ✗ Không khớp: 'Hướng dẫn tự chăm sóc bàn chân' (Ngưỡng: 80%)
+2026-01-08 14:32:32 - WARNING - ✗ Không khớp: 'Tư vấn chế độ dinh dưỡng và tập luyện' (Ngưỡng: 80%)
+2026-01-08 14:32:32 - WARNING - Ambiguous match for "Điện nhĩ châm điều trị đau đầu, đau nửa đầu": Using first of 1 options
+2026-01-08 14:32:32 - DEBUG - ✓ Khớp: 'Điện nhĩ châm điều trị đau đầu, đau nửa đầu' → 'Điện nhĩ châm điều trị đau đầu, đau nửa đầu (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:32 - WARNING - Ambiguous match for "Điện nhĩ châm điều trị mất ngủ": Using first of 1 options
+2026-01-08 14:32:32 - DEBUG - ✓ Khớp: 'Điện nhĩ châm điều trị mất ngủ' → 'Điện nhĩ châm điều trị mất ngủ (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:32 - WARNING - Ambiguous match for "Điện châm điều trị hội chứng tiền đình": Using first of 1 options
+2026-01-08 14:32:32 - DEBUG - ✓ Khớp: 'Điện châm điều trị hội chứng tiền đình' → 'Điện châm điều trị hội chứng tiền đình (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:32 - DEBUG - ✓ Khớp: 'Điện châm điều trị thiểu năng tuần hoàn não mạn tính' → 'Điện châm điều trị thiểu năng tuần hoàn não mạn tính' (Độ chính xác: 100%)
+2026-01-08 14:32:32 - DEBUG - ✓ Khớp: 'Điện châm điều trị hội chứng stress' → 'Điện châm điều trị hội chứng stress' (Độ chính xác: 100%)
+2026-01-08 14:32:32 - DEBUG - ✓ Khớp: 'Điện châm điều trị cảm mạo' → 'Điện châm điều trị cảm mạo' (Độ chính xác: 100%)
+2026-01-08 14:32:32 - DEBUG - ✓ Khớp: 'Điện châm điều trị trĩ' → 'Điện châm điều trị trĩ' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị viêm bàng quang' → 'Điện châm điều trị viêm bàng quang' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị hội chứng tiền mãn kinh' → 'Điện châm điều trị hội chứng tiền mãn kinh' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Điện châm điều trị liệt tứ chi do chấn thương cột sống": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị liệt tứ chi do chấn thương cột sống' → 'Điện châm điều trị liệt tứ chi do chấn thương cột sống (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị rối loạn thần kinh chức năng sau chấn thương sọ não' → 'Điện châm điều trị rối loạn thần kinh chức năng sau chấn thương sọ não' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Điện châm điều trị hội chứng ngoại tháp": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị hội chứng ngoại tháp' → 'Điện châm điều trị hội chứng ngoại tháp (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Điện châm điều trị khàn tiếng": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị khàn tiếng' → 'Điện châm điều trị khàn tiếng (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Điện châm điều trị viêm thần kinh thị giác sau giai đoạn cấp": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị viêm thần kinh thị giác sau giai đoạn cấp' → 'Điện châm điều trị viêm thần kinh thị giác sau giai đoạn cấp (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Điện châm điều trị viêm mũi xoang": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị viêm mũi xoang' → 'Điện châm điều trị viêm mũi xoang (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Điện châm điều trị rối loạn tiêu hóa": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị rối loạn tiêu hóa' → 'Điện châm điều trị rối loạn tiêu hóa (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị đau do thoái hóa khớp' → 'Điện châm điều trị đau do thoái hóa khớp' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị ù tai' → 'Điện châm điều trị ù tai' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Điện châm điều trị giảm khứu giác": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị giảm khứu giác' → 'Điện châm điều trị giảm khứu giác (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Điện châm điều trị rối loạn thần kinh thực vật": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị rối loạn thần kinh thực vật' → 'Điện châm điều trị rối loạn thần kinh thực vật (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Điện châm điều trị giảm đau do zona": Using first of 2 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị giảm đau do zona' → 'Điện châm điều trị giảm đau do zona (⚠️ 2 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Điện châm điều trị liệt do viêm đa rễ, đa dây thần kinh' → 'Điện châm điều trị liệt do viêm đa rễ, đa dây thần kinh' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt chi trên": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị liệt chi trên' → 'Xoa bóp bấm huyệt điều trị liệt chi trên (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt chi dưới": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị liệt chi dưới' → 'Xoa bóp bấm huyệt điều trị liệt chi dưới (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị liệt nửa người do tai biến mạch máu não' → 'Xoa bóp bấm huyệt điều trị liệt nửa người do tai biến mạch máu não' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị hội chứng thắt lưng- hông' → 'Xoa bóp bấm huyệt điều trị hội chứng thắt lưng- hông' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt do viêm não": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị liệt do viêm não' → 'Xoa bóp bấm huyệt điều trị liệt do viêm não (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị cứng khớp chi trên": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị cứng khớp chi trên' → 'Xoa bóp bấm huyệt điều trị cứng khớp chi trên (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị cứng khớp chi dưới": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị cứng khớp chi dưới' → 'Xoa bóp bấm huyệt điều trị cứng khớp chi dưới (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị choáng, ngất' → 'Xoa bóp bấm huyệt điều trị choáng, ngất' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị chứng ù tai": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị chứng ù tai' → 'Xoa bóp bấm huyệt điều trị chứng ù tai (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị giảm khứu giác": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị giảm khứu giác' → 'Xoa bóp bấm huyệt điều trị giảm khứu giác (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt do bệnh của cơ": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị liệt do bệnh của cơ' → 'Xoa bóp bấm huyệt điều trị liệt do bệnh của cơ (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị tâm căn suy nhược": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị tâm căn suy nhược' → 'Xoa bóp bấm huyệt điều trị tâm căn suy nhược (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng ngoại tháp": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị hội chứng ngoại tháp' → 'Xoa bóp bấm huyệt điều trị hội chứng ngoại tháp (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đau đầu, đau nửa đầu": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị đau đầu, đau nửa đầu' → 'Xoa bóp bấm huyệt điều trị đau đầu, đau nửa đầu (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị mất ngủ": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị mất ngủ' → 'Xoa bóp bấm huyệt điều trị mất ngủ (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị hội chứng stress' → 'Xoa bóp bấm huyệt điều trị hội chứng stress' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị thiểu năng tuần hoàn não mạn tính' → 'Xoa bóp bấm huyệt điều trị thiểu năng tuần hoàn não mạn tính' (Độ chính xác: 100%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị tổn thương rễ, đám rối và dây thần kinh": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị tổn thương rễ, đám rối và dây thần kinh' → 'Xoa bóp bấm huyệt điều trị tổn thương rễ, đám rối và dây thần kinh (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị tổn thương dây thần kinh V": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị tổn thương dây thần kinh V' → 'Xoa bóp bấm huyệt điều trị tổn thương dây thần kinh V (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt dây thần kinh số VII ngoại biên": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị liệt dây thần kinh số VII ngoại biên' → 'Xoa bóp bấm huyệt điều trị liệt dây thần kinh số VII ngoại biên (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị sụp mi": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị sụp mi' → 'Xoa bóp bấm huyệt điều trị sụp mi (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị viêm thần kinh thị giác sau giai đoạn cấp": Using first of 1 options
+2026-01-08 14:32:33 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị viêm thần kinh thị giác sau giai đoạn cấp' → 'Xoa bóp bấm huyệt điều trị viêm thần kinh thị giác sau giai đoạn cấp (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:33 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng tiền đình": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị hội chứng tiền đình' → 'Xoa bóp bấm huyệt điều trị hội chứng tiền đình (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị viêm mũi xoang": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị viêm mũi xoang' → 'Xoa bóp bấm huyệt điều trị viêm mũi xoang (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hen phế quản": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị hen phế quản' → 'Xoa bóp bấm huyệt điều trị hen phế quản (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt hỗ trợ điều trị tăng huyết áp' → 'Xoa bóp bấm huyệt hỗ trợ điều trị tăng huyết áp' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị huyết áp thấp": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị huyết áp thấp' → 'Xoa bóp bấm huyệt điều trị huyết áp thấp (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đau thần kinh liên sườn": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị đau thần kinh liên sườn' → 'Xoa bóp bấm huyệt điều trị đau thần kinh liên sườn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị hội chứng dạ dày- tá tràng' → 'Xoa bóp bấm huyệt điều trị hội chứng dạ dày- tá tràng' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị nấc' → 'Xoa bóp bấm huyệt điều trị nấc' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị viêm khớp dạng thấp": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị viêm khớp dạng thấp' → 'Xoa bóp bấm huyệt điều trị viêm khớp dạng thấp (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị đau do thoái hóa khớp' → 'Xoa bóp bấm huyệt điều trị đau do thoái hóa khớp' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đau lưng": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị đau lưng' → 'Xoa bóp bấm huyệt điều trị đau lưng (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị viêm quanh khớp vai": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị viêm quanh khớp vai' → 'Xoa bóp bấm huyệt điều trị viêm quanh khớp vai (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị hội chứng vai gáy": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị hội chứng vai gáy' → 'Xoa bóp bấm huyệt điều trị hội chứng vai gáy (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị chứng tic cơ mặt' → 'Xoa bóp bấm huyệt điều trị chứng tic cơ mặt' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị rối loạn cảm giác đầu chi": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị rối loạn cảm giác đầu chi' → 'Xoa bóp bấm huyệt điều trị rối loạn cảm giác đầu chi (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị rối loạn kinh nguyệt' → 'Xoa bóp bấm huyệt điều trị rối loạn kinh nguyệt' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị đau bụng kinh' → 'Xoa bóp bấm huyệt điều trị đau bụng kinh' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị hội chứng tiền mãn kinh' → 'Xoa bóp bấm huyệt điều trị hội chứng tiền mãn kinh' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị táo bón": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị táo bón' → 'Xoa bóp bấm huyệt điều trị táo bón (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị rối loạn tiêu hóa": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị rối loạn tiêu hóa' → 'Xoa bóp bấm huyệt điều trị rối loạn tiêu hóa (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị rối loạn cảm giác nông' → 'Xoa bóp bấm huyệt điều trị rối loạn cảm giác nông' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị bí đái cơ năng' → 'Xoa bóp bấm huyệt điều trị bí đái cơ năng' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị rối loạn thần kinh thực vật": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị rối loạn thần kinh thực vật' → 'Xoa bóp bấm huyệt điều trị rối loạn thần kinh thực vật (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị béo phì' → 'Xoa bóp bấm huyệt điều trị béo phì' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị rối loạn chức năng vận động do chấn thương sọ não' → 'Xoa bóp bấm huyệt điều trị rối loạn chức năng vận động do chấn thương sọ não' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị liệt tứ chi do chấn thương cột sống": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị liệt tứ chi do chấn thương cột sống' → 'Xoa bóp bấm huyệt điều trị liệt tứ chi do chấn thương cột sống (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị giảm đau sau phẫu thuật": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị giảm đau sau phẫu thuật' → 'Xoa bóp bấm huyệt điều trị giảm đau sau phẫu thuật (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị giảm đau do ung thư": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị giảm đau do ung thư' → 'Xoa bóp bấm huyệt điều trị giảm đau do ung thư (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Xoa bóp bấm huyệt điều trị đái dầm": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị đái dầm' → 'Xoa bóp bấm huyệt điều trị đái dầm (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Xoa bóp bấm huyệt điều trị hội chứng phân ly' → 'Xoa bóp bấm huyệt điều trị hội chứng phân ly' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Cứu điều trị hội chứng thắt lưng- hông thể phong hàn' → 'Cứu điều trị hội chứng thắt lưng- hông thể phong hàn' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Cứu điều trị đau đầu, đau nửa đầu thể hàn": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Cứu điều trị đau đầu, đau nửa đầu thể hàn' → 'Cứu điều trị đau đầu, đau nửa đầu thể hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Cứu điều trị nấc thể hàn' → 'Cứu điều trị nấc thể hàn' (Độ chính xác: 100%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Cứu điều trị ngoại cảm phong hàn": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Cứu điều trị ngoại cảm phong hàn' → 'Cứu điều trị ngoại cảm phong hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Cứu điều trị khàn tiếng thể hàn": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Cứu điều trị khàn tiếng thể hàn' → 'Cứu điều trị khàn tiếng thể hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - WARNING - Ambiguous match for "Cứu điều trị liệt nửa người thể hàn": Using first of 1 options
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Cứu điều trị liệt nửa người thể hàn' → 'Cứu điều trị liệt nửa người thể hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:34 - DEBUG - ✓ Khớp: 'Cứu điều trị liệt dây thần kinh số VII ngoại biên thể hàn' → 'Cứu điều trị liệt dây thần kinh số VII ngoại biên thể hàn' (Độ chính xác: 100%)
+2026-01-08 14:32:35 - WARNING - Ambiguous match for "Cứu điều trị đau vai gáy cấp thể hàn": Using first of 1 options
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị đau vai gáy cấp thể hàn' → 'Cứu điều trị đau vai gáy cấp thể hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị giảm thính lực thể hàn' → 'Cứu điều trị giảm thính lực thể hàn' (Độ chính xác: 100%)
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị rối loạn tiểu tiện thể hàn' → 'Cứu điều trị rối loạn tiểu tiện thể hàn' (Độ chính xác: 100%)
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị sa tử cung thể hàn' → 'Cứu điều trị sa tử cung thể hàn' (Độ chính xác: 100%)
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị đau bụng kinh thể hàn' → 'Cứu điều trị đau bụng kinh thể hàn' (Độ chính xác: 100%)
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị rối loạn kinh nguyệt thể hàn' → 'Cứu điều trị rối loạn kinh nguyệt thể hàn' (Độ chính xác: 100%)
+2026-01-08 14:32:35 - WARNING - Ambiguous match for "Cứu điều trị đau lưng thể hàn": Using first of 1 options
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị đau lưng thể hàn' → 'Cứu điều trị đau lưng thể hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:35 - WARNING - Ambiguous match for "Cứu điều trị giảm khứu giác thể hàn": Using first of 1 options
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị giảm khứu giác thể hàn' → 'Cứu điều trị giảm khứu giác thể hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:35 - WARNING - Ambiguous match for "Cứu điều trị rối loạn thần kinh thực vật thể hàn": Using first of 1 options
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị rối loạn thần kinh thực vật thể hàn' → 'Cứu điều trị rối loạn thần kinh thực vật thể hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:35 - WARNING - Ambiguous match for "Cứu điều trị cảm cúm thể hàn": Using first of 1 options
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị cảm cúm thể hàn' → 'Cứu điều trị cảm cúm thể hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:35 - WARNING - Ambiguous match for "Cứu điều trị rối loạn tiêu hóa thể hàn": Using first of 1 options
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Cứu điều trị rối loạn tiêu hóa thể hàn' → 'Cứu điều trị rối loạn tiêu hóa thể hàn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:35 - WARNING - Ambiguous match for "Thay băng điều trị vết bỏng dưới 10% diện tích cơ thể ở người lớn": Using first of 2 options
+2026-01-08 14:32:35 - DEBUG - ✓ Khớp: 'Thay băng điều trị vết bỏng dưới 10% diện tích cơ thể ở người lớn' → 'Thay băng điều trị vết bỏng dưới 10% diện tích cơ thể ở người lớn [dưới 10% diện tích cơ thể] (⚠️ 2 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:35 - WARNING - ✗ Không khớp: 'Khám người bệnh bỏng, chẩn đoán diện tích và độ sâu bỏng bằng lâm sàng' (Ngưỡng: 80%)
+2026-01-08 14:32:35 - WARNING - ✗ Không khớp: 'Sơ cứu, cấp cứu tổn thương bỏng nhiệt' (Ngưỡng: 80%)
+2026-01-08 14:32:36 - WARNING - ✗ Không khớp: 'Xử lí tại chỗ kì đầu tổn thương bỏng' (Ngưỡng: 80%)
+2026-01-08 14:32:36 - WARNING - ✗ Không khớp: 'Sơ cấp cứu bỏng do vôi tôi nóng' (Ngưỡng: 80%)
+2026-01-08 14:32:36 - WARNING - ✗ Không khớp: 'Sơ cấp cứu bỏng acid' (Ngưỡng: 80%)
+2026-01-08 14:32:37 - WARNING - ✗ Không khớp: 'Sơ cấp cứu bỏng do dòng điện' (Ngưỡng: 80%)
+2026-01-08 14:32:37 - DEBUG - ✓ Khớp: 'Đặt dây truyền dịch ngoại vi điều trị người bệnh bỏng' → 'Đặt dây truyền dịch ngoại vi điều trị người bệnh bỏng' (Độ chính xác: 100%)
+2026-01-08 14:32:37 - DEBUG - ✓ Khớp: 'Làm thuốc vết khâu tầng sinh môn nhiễm khuẩn' → 'Làm thuốc vết khâu tầng sinh môn nhiễm khuẩn' (Độ chính xác: 100%)
+2026-01-08 14:32:37 - DEBUG - ✓ Khớp: 'Khám thai' → 'Khám Nhi' (Độ chính xác: 80%)
+2026-01-08 14:32:37 - WARNING - Ambiguous match for "Trích áp xe tầng sinh môn": Using first of 1 options
+2026-01-08 14:32:37 - DEBUG - ✓ Khớp: 'Trích áp xe tầng sinh môn' → 'Trích áp xe tầng sinh môn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:37 - WARNING - Ambiguous match for "Trích áp xe tuyến Bartholin": Using first of 1 options
+2026-01-08 14:32:37 - DEBUG - ✓ Khớp: 'Trích áp xe tuyến Bartholin' → 'Trích áp xe tuyến Bartholin (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:37 - WARNING - ✗ Không khớp: 'Khám phụ khoa' (Ngưỡng: 80%)
+2026-01-08 14:32:37 - DEBUG - ✓ Khớp: 'Soi cổ tử cung' → 'Soi cổ tử cung' (Độ chính xác: 100%)
+2026-01-08 14:32:38 - WARNING - ✗ Không khớp: 'Làm thuốc âm đạo' (Ngưỡng: 80%)
+2026-01-08 14:32:38 - WARNING - ✗ Không khớp: 'Khám sơ sinh' (Ngưỡng: 80%)
+2026-01-08 14:32:38 - WARNING - ✗ Không khớp: 'Chăm sóc rốn sơ sinh' (Ngưỡng: 80%)
+2026-01-08 14:32:38 - WARNING - ✗ Không khớp: 'Tắm sơ sinh' (Ngưỡng: 80%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Đặt và tháo dụng cụ tử cung' → 'Đặt và tháo dụng cụ tử cung' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Phá thai từ tuần thứ 6 đến hết 12 tuần bằng phương pháp hút chân không' → 'Phá thai từ tuần thứ 6 đến hết 12 tuần bằng phương pháp hút chân không' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Phá thai bằng thuốc cho tuổi thai đến hết 7 tuần' → 'Phá thai bằng thuốc cho tuổi thai đến hết 7 tuần' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Phá thai đến hết 7 tuần bằng phương pháp hút chân không' → 'Phá thai đến hết 7 tuần bằng phương pháp hút chân không' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Siêu âm ổ bụng (gan mật, tụy, lách, thận, bàng quang)' → 'Siêu âm ổ bụng (gan mật, tụy, lách, thận, bàng quang)' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Siêu âm tử cung phần phụ' → 'Siêu âm tử cung phần phụ' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Siêu âm thai (thai, nhau thai, nước ối)' → 'Siêu âm thai (thai, nhau thai, nước ối)' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Siêu âm tử cung buồng trứng qua đường bụng' → 'Siêu âm tử cung buồng trứng qua đường bụng' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Siêu âm tử cung buồng trứng qua đường âm đạo' → 'Siêu âm tử cung buồng trứng qua đường âm đạo' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Siêu âm thai nhi trong 3 tháng đầu' → 'Siêu âm thai nhi trong 3 tháng đầu' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Siêu âm thai nhi trong 3 tháng giữa' → 'Siêu âm thai nhi trong 3 tháng giữa' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Siêu âm thai nhi trong 3 tháng cuối' → 'Siêu âm thai nhi trong 3 tháng cuối' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang cột sống cổ C1-C2": Using first of 5 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống cổ C1-C2' → 'Chụp X-quang cột sống cổ C1-C2 [≤ 24x30 cm, 1 tư thế] (⚠️ 5 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang cột sống ngực thẳng nghiêng hoặc chếch": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống ngực thẳng nghiêng hoặc chếch' → 'Chụp X-quang cột sống ngực thẳng nghiêng hoặc chếch [số hóa 2 phim] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang cột sống thắt lưng thẳng nghiêng": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống thắt lưng thẳng nghiêng' → 'Chụp X-quang cột sống thắt lưng thẳng nghiêng [số hóa 2 phim] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang cột sống thắt lưng chếch hai bên": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống thắt lưng chếch hai bên' → 'Chụp X-quang cột sống thắt lưng chếch hai bên [số hóa 2 phim] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang cột sống thắt lưng L5-S1 thẳng nghiêng": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống thắt lưng L5-S1 thẳng nghiêng' → 'Chụp X-quang cột sống thắt lưng L5-S1 thẳng nghiêng [số hóa 2 phim] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang cột sống cùng cụt thẳng nghiêng": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang cột sống cùng cụt thẳng nghiêng' → 'Chụp X-quang cột sống cùng cụt thẳng nghiêng [số hóa 2 phim] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang khung chậu thẳng": Using first of 4 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang khung chậu thẳng' → 'Chụp X-quang khung chậu thẳng [ > 24x30 cm, 1 tư thế] (⚠️ 4 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương đòn thẳng hoặc chếch": Using first of 4 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương đòn thẳng hoặc chếch' → 'Chụp X-quang xương đòn thẳng hoặc chếch [số hóa 1 phim] (⚠️ 4 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang khớp vai thẳng": Using first of 7 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp vai thẳng' → 'Chụp X-quang khớp vai thẳng [số hóa 1 phim] (⚠️ 7 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang khớp vai nghiêng hoặc chếch": Using first of 4 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp vai nghiêng hoặc chếch' → 'Chụp X-quang khớp vai nghiêng hoặc chếch [số hóa 1 phim] (⚠️ 4 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương bả vai thẳng nghiêng": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương bả vai thẳng nghiêng' → 'Chụp X-quang xương bả vai thẳng nghiêng [số hóa 2 phim] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương cánh tay thẳng nghiêng": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cánh tay thẳng nghiêng' → 'Chụp X-quang xương cánh tay thẳng nghiêng [số hóa 2 phim] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang khớp khuỷu thẳng, nghiêng hoặc chếch": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp khuỷu thẳng, nghiêng hoặc chếch' → 'Chụp X-quang khớp khuỷu thẳng, nghiêng hoặc chếch [số hóa 2 phim] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương cẳng tay thẳng nghiêng": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cẳng tay thẳng nghiêng' → 'Chụp X-quang xương cẳng tay thẳng nghiêng [số hóa 2 phim] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương cổ tay thẳng, nghiêng hoặc chếch": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cổ tay thẳng, nghiêng hoặc chếch' → 'Chụp X-quang xương cổ tay thẳng, nghiêng hoặc chếch [> 24x30 cm, 2 tư thế] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương bàn ngón tay thẳng, nghiêng hoặc chếch": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương bàn ngón tay thẳng, nghiêng hoặc chếch' → 'Chụp X-quang xương bàn ngón tay thẳng, nghiêng hoặc chếch [> 24x30 cm, 2 tư thế] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang khớp háng thẳng hai bên": Using first of 3 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp háng thẳng hai bên' → 'Chụp X-quang khớp háng thẳng hai bên [> 24x30 cm, 1 tư thế] (⚠️ 3 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang khớp háng nghiêng": Using first of 4 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp háng nghiêng' → 'Chụp X-quang khớp háng nghiêng [> 24x30 cm, 1 tư thế] (⚠️ 4 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương đùi thẳng nghiêng": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương đùi thẳng nghiêng' → 'Chụp X-quang xương đùi thẳng nghiêng [> 24x30 cm, 2 tư thế] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang khớp gối thẳng, nghiêng hoặc chếch": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang khớp gối thẳng, nghiêng hoặc chếch' → 'Chụp X-quang khớp gối thẳng, nghiêng hoặc chếch [ >24x30 cm, 2 tư thế] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương bánh chè và khớp đùi bánh chè": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương bánh chè và khớp đùi bánh chè' → 'Chụp X-quang xương bánh chè và khớp đùi bánh chè  [> 24x30 cm, 2 tư thế] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương cẳng chân thẳng nghiêng": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cẳng chân thẳng nghiêng' → 'Chụp X-quang xương cẳng chân thẳng nghiêng  [> 24x30 cm, 2 tư thế] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương cổ chân thẳng, nghiêng hoặc chếch": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương cổ chân thẳng, nghiêng hoặc chếch' → 'Chụp X-quang xương cổ chân thẳng, nghiêng hoặc chếch [> 24x30 cm, 2 tư thế] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương bàn, ngón chân thẳng, nghiêng hoặc chếch": Using first of 6 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương bàn, ngón chân thẳng, nghiêng hoặc chếch' → 'Chụp X-quang xương bàn, ngón chân thẳng, nghiêng hoặc chếch  [> 24x30 cm, 2 tư thế] (⚠️ 6 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang xương gót thẳng nghiêng": Using first of 5 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang xương gót thẳng nghiêng' → 'Chụp X-quang xương gót thẳng nghiêng [≤ 24x30 cm, 2 tư thế] (⚠️ 5 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang ngực thẳng": Using first of 7 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang ngực thẳng' → 'Chụp X-quang ngực thẳng [ > 24x30 cm, 1 tư thế] (⚠️ 7 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang ngực nghiêng hoặc chếch mỗi bên": Using first of 4 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang ngực nghiêng hoặc chếch mỗi bên' → 'Chụp X-quang ngực nghiêng hoặc chếch mỗi bên [ > 24x30 cm, 1 tư thế] (⚠️ 4 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - WARNING - Ambiguous match for "Chụp X-quang đỉnh phổi ưỡn": Using first of 4 options
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Chụp X-quang đỉnh phổi ưỡn' → 'Chụp X-quang đỉnh phổi ưỡn [ > 24x30 cm, 1 tư thế] (⚠️ 4 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Thời gian máu chảy phương pháp Duke' → 'Thời gian máu chảy phương pháp Duke' (Độ chính xác: 100%)
+2026-01-08 14:32:39 - DEBUG - ✓ Khớp: 'Thời gian máu chảy phương pháp Ivy' → 'Thời gian máu chảy phương pháp Ivy' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - WARNING - ✗ Không khớp: 'Nghiệm pháp dây thắt' (Ngưỡng: 80%)
+2026-01-08 14:32:40 - WARNING - ✗ Không khớp: 'Dàn tiêu bản máu ngoại vi (Phết máu ngoại vi)' (Ngưỡng: 80%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Tổng phân tích tế bào máu ngoại vi (bằng máy đếm tổng trở)' → 'Tổng phân tích tế bào máu ngoại vi (bằng máy đếm tổng trở)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Tìm ký sinh trùng sốt rét trong máu (bằng phương pháp thủ công)' → 'Tìm ký sinh trùng sốt rét trong máu (bằng phương pháp thủ công)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Máu lắng (bằng phương pháp thủ công)' → 'Máu lắng (bằng phương pháp thủ công)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Xét nghiệm tế bào cặn nước tiểu (bằng phương pháp thủ công)' → 'Xét nghiệm tế bào cặn nước tiểu (bằng phương pháp thủ công)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Cặn Addis' → 'Cặn Addis' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định nhóm máu hệ ABO (kỹ thuật ống nghiệm)' → 'Định nhóm máu hệ ABO (kỹ thuật ống nghiệm)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định nhóm máu hệ ABO (kỹ thuật phiến đá)' → 'Định nhóm máu hệ ABO (kỹ thuật phiến đá)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định nhóm máu hệ ABO (kỹ thuật trên giấy)' → 'Định nhóm máu hệ ABO (kỹ thuật trên giấy)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định nhóm máu hệ ABO (kỹ thuật trên thẻ)' → 'Định nhóm máu hệ ABO (kỹ thuật trên thẻ)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định nhóm máu hệ Rh(D) (kỹ thuật phiến đá)' → 'Định nhóm máu hệ Rh(D) (kỹ thuật phiến đá)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định lượng Acid Uric [Máu]' → 'Định lượng Acid Uric [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - WARNING - Ambiguous match for "Định lượng Albumin [Máu]": Using first of 2 options
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định lượng Albumin [Máu]' → 'Định lượng Albumin [Máu] (⚠️ 2 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Đo hoạt độ ALP (Alkalin Phosphatase) [Máu]' → 'Đo hoạt độ ALP (Alkalin Phosphatase) [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Đo hoạt độ Amylase [Máu]' → 'Đo hoạt độ Amylase [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Đo hoạt độ ALT (GPT) [Máu]' → 'Đo hoạt độ ALT (GPT) [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Đo hoạt độ AST (GOT) [Máu]' → 'Đo hoạt độ AST (GOT) [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định lượng Bilirubin trực tiếp [Máu]' → 'Định lượng Bilirubin trực tiếp [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định lượng Bilirubin gián tiếp [Máu]' → 'Định lượng Bilirubin gián tiếp [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - WARNING - Ambiguous match for "Định lượng Bilirubin toàn phần [Máu]": Using first of 2 options
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định lượng Bilirubin toàn phần [Máu]' → 'Định lượng Bilirubin toàn phần [Máu] (⚠️ 2 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định lượng Canxi toàn phần [Máu]' → 'Định lượng Canxi toàn phần [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định lượng Cholesterol toàn phần (máu)' → 'Định lượng Cholesterol toàn phần (máu)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định lượng Creatinin (máu)' → 'Định lượng Creatinin (máu)' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Điện giải đồ (Na, K, Cl) [Máu]' → 'Điện giải đồ (Na, K, Cl) [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:40 - WARNING - Ambiguous match for "Định lượng Glucose [Máu]": Using first of 3 options
+2026-01-08 14:32:40 - DEBUG - ✓ Khớp: 'Định lượng Glucose [Máu]' → 'Định lượng Glucose [Máu] (⚠️ 3 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:40 - WARNING - Ambiguous match for "Định lượng Globulin [Máu]": Using first of 2 options
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng Globulin [Máu]' → 'Định lượng Globulin [Máu] (⚠️ 2 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Đo hoạt độ GGT (Gama Glutamyl Transferase) [Máu]' → 'Đo hoạt độ GGT (Gama Glutamyl Transferase) [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng HbA1c [Máu]' → 'Định lượng HbA1c [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng HDL-C (High density lipoprotein Cholesterol) [Máu]' → 'Định lượng HDL-C (High density lipoprotein Cholesterol) [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng LDL-C (Low density lipoprotein Cholesterol) [Máu]' → 'Định lượng LDL-C (Low density lipoprotein Cholesterol) [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng Protein toàn phần [Máu]' → 'Định lượng Protein toàn phần [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng Sắt [Máu]' → 'Định lượng Sắt [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng Triglycerid (máu) [Máu]' → 'Định lượng Triglycerid (máu) [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng Urê máu [Máu]' → 'Định lượng Urê máu [Máu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Điện giải (Na, K, Cl) [niệu]' → 'Điện giải (Na, K, Cl) [niệu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định tính Amphetamine (test nhanh) [niệu]' → 'Định tính Amphetamine (test nhanh) [niệu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - WARNING - Ambiguous match for "Định lượng Amylase [niệu]": Using first of 2 options
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng Amylase [niệu]' → 'Định lượng Amylase [niệu] (⚠️ 2 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định tính beta hCG (test nhanh) [niệu]' → 'Định tính Amphetamine (test nhanh) [niệu]' (Độ chính xác: 81%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng Creatinin (niệu)' → 'Định lượng Creatinin (niệu)' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng Glucose (niệu)' → 'Định lượng Glucose (niệu)' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định tính Marijuana (THC) (test nhanh) [niệu]' → 'Định tính Marijuana (THC) (test nhanh) [niệu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định tính Opiate (test nhanh) [niệu]' → 'Định tính Opiate (test nhanh) [niệu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định tính Morphin (test nhanh) [niệu]' → 'Định tính Morphin (test nhanh) [niệu]' (Độ chính xác: 100%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định tính Heroin (test nhanh) [niệu]' → 'Định tính Codein (test nhanh) [niệu]' (Độ chính xác: 90%)
+2026-01-08 14:32:41 - DEBUG - ✓ Khớp: 'Định lượng Urê (niệu)' → 'Định lượng Urê (niệu)' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Tổng phân tích nước tiểu (Bằng máy tự động)' → 'Tổng phân tích nước tiểu (Bằng máy tự động)' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Vi khuẩn nhuộm soi' → 'Vi khuẩn nhuộm soi' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'AFB trực tiếp nhuộm Ziehl-Neelsen' → 'AFB trực tiếp nhuộm Ziehl-Neelsen' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Mycobacterium tuberculosis Mantoux' → 'Mycobacterium tuberculosis Mantoux' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Mycobacterium tuberculosis định danh và kháng RMP Xpert' → 'Mycobacterium tuberculosis định danh và kháng RMP Xpert' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Neisseria gonorrhoeae nhuộm soi' → 'Neisseria gonorrhoeae nhuộm soi' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Treponema pallidum test nhanh' → 'Treponema pallidum test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - WARNING - Ambiguous match for "Treponema pallidum RPR định tính và định lượng": Using first of 2 options
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Treponema pallidum RPR định tính và định lượng' → 'Treponema pallidum RPR định tính và định lượng [định lượng] (⚠️ 2 tương tự)' (Độ chính xác: 99%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HBsAg test nhanh' → 'HBsAg test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HBsAb test nhanh' → 'HBsAb test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HBcAb test nhanh' → 'HBcAb test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HBeAg test nhanh' → 'HBeAg test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HBeAb test nhanh' → 'HBeAb test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HCV Ab test nhanh' → 'HCV Ab test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HAV Ab test nhanh' → 'HAV Ab test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HEV Ab test nhanh' → 'HEV Ab test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HEV IgM test nhanh' → 'HEV IgM test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HIV Ab test nhanh' → 'HIV Ab test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HIV Ag/Ab test nhanh' → 'HIV Ag/Ab test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'HIV khẳng định (*)' → 'HIV khẳng định (*)' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Dengue virus NS1Ag test nhanh' → 'Dengue virus NS1Ag test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Hồng cầu, bạch cầu trong phân soi tươi' → 'Hồng cầu, bạch cầu trong phân soi tươi' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Đơn bào đường ruột soi tươi' → 'Đơn bào đường ruột soi tươi' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Trứng giun, sán soi tươi' → 'Trứng giun, sán soi tươi' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Trứng giun soi tập trung' → 'Trứng giun soi tập trung' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Strongyloides stercoralis (Giun lươn) ấu trùng soi tươi' → 'Strongyloides stercoralis (Giun lươn) ấu trùng soi tươi' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Plasmodium (Ký sinh trùng sốt rét) nhuộm soi định tính' → 'Plasmodium (Ký sinh trùng sốt rét) nhuộm soi định tính' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Plasmodium (Ký sinh trùng sốt rét) Ag test nhanh' → 'Plasmodium (Ký sinh trùng sốt rét) Ag test nhanh' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Trichomonas vaginalis soi tươi' → 'Trichomonas vaginalis soi tươi' (Độ chính xác: 100%)
+2026-01-08 14:32:42 - DEBUG - ✓ Khớp: 'Trichomonas vaginalis nhuộm soi' → 'Trichomonas vaginalis nhuộm soi' (Độ chính xác: 100%)
+2026-01-08 14:32:43 - INFO - Đã xuất 147 bản ghi không khớp ra: C:/Users/Administrator/Desktop/Danh mục kĩ thuật/DMKT_PKDK_79764_Luong2_unmatched.xlsx
+2026-01-08 14:32:43 - INFO - ============================================================
+2026-01-08 14:32:43 - INFO - KẾT THÚC XỬ LÝ
+2026-01-08 14:32:43 - INFO - Tổng số bản ghi: 301
+2026-01-08 14:32:43 - INFO - Khớp thành công: 250
+2026-01-08 14:32:43 - INFO - Không khớp: 51
+2026-01-08 14:32:43 - INFO - Tỷ lệ khớp: 83.1%
+2026-01-08 14:32:43 - INFO - ============================================================
