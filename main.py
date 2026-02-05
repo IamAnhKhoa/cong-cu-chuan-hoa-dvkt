@@ -12,13 +12,13 @@ Features:
 
 import sys
 import os
-from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
+from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
                              QHBoxLayout, QLabel, QPushButton, QLineEdit, 
                              QFileDialog, QProgressBar, QTextEdit, QGroupBox,
                              QRadioButton, QSpinBox, QTableWidget, QTableWidgetItem,
-                             QMessageBox, QSplitter, QDialog)
-from PyQt5.QtCore import Qt, QThread, pyqtSignal, QSettings
-from PyQt5.QtGui import QFont
+                             QMessageBox, QSplitter, QDialog, QScrollArea)
+from PyQt6.QtCore import Qt, QThread, pyqtSignal, QSettings
+from PyQt6.QtGui import QFont
 from processor import CatalogProcessor
 from ui_styles import MAIN_STYLE
 from logger_config import AppLogger
@@ -76,7 +76,7 @@ class ProgressDialog(QDialog):
             color: #2c3e50; 
             padding: 10px 0;
         """)
-        title.setAlignment(Qt.AlignCenter)
+        title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(title)
         
         # Progress bar
@@ -121,7 +121,7 @@ class ProgressDialog(QDialog):
             font-size: 11px; 
             padding: 5px 0;
         """)
-        info.setAlignment(Qt.AlignCenter)
+        info.setAlignment(Qt.AlignmentFlag.AlignCenter)
         info.setWordWrap(True)
         layout.addWidget(info)
         
@@ -172,13 +172,13 @@ class MainWindow(QMainWindow):
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
         main_layout = QVBoxLayout(central_widget)
-        main_layout.setSpacing(20)
-        main_layout.setContentsMargins(25, 15, 25, 25)
+        main_layout.setSpacing(15) # Compact spacing
+        main_layout.setContentsMargins(20, 20, 20, 20) # Standard margins
         
         # Title
         title = QLabel("CÔNG CỤ CHUẨN HÓA DANH MỤC KỸ THUẬT")
         title.setObjectName("title")
-        title.setAlignment(Qt.AlignCenter)
+        title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_layout.addWidget(title)
         
         # Reference files section
@@ -200,7 +200,7 @@ class MainWindow(QMainWindow):
         # Process button
         self.process_btn = QPushButton("BẮT ĐẦU XỬ LÝ")
         self.process_btn.setObjectName("success_button")
-        self.process_btn.setMinimumHeight(50)
+        self.process_btn.setMinimumHeight(45) # Slightly smaller
         self.process_btn.clicked.connect(self.start_processing)
         self.process_btn.setEnabled(False)
         main_layout.addWidget(self.process_btn)
@@ -219,6 +219,9 @@ class MainWindow(QMainWindow):
         self.view_unmatched_btn.clicked.connect(self.view_unmatched)
         action_layout.addWidget(self.view_unmatched_btn)
         main_layout.addLayout(action_layout)
+        
+        # Add stretch to prevent widgets from expanding vertically
+        main_layout.addStretch()
         
         # Apply styles
         self.setStyleSheet(MAIN_STYLE)
@@ -242,11 +245,36 @@ class MainWindow(QMainWindow):
         folder_layout.addWidget(self.ref_folder_input)
         
         browse_btn = QPushButton("Chọn thư mục")
-        browse_btn.setMinimumWidth(150)
+        browse_btn.setMinimumWidth(120)
         browse_btn.clicked.connect(self.browse_reference_folder)
         folder_layout.addWidget(browse_btn)
         
         layout.addLayout(folder_layout)
+        
+        # Download Sample Button (Moved here)
+        download_layout = QHBoxLayout()
+        download_layout.addStretch()
+        
+        download_sample_btn = QPushButton("Tải file mẫu GIA_HDND (399/NQ-HĐND)")
+        download_sample_btn.setMinimumWidth(220)
+        download_sample_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #17a2b8;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 6px 12px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            QPushButton:hover {
+                background-color: #138496;
+            }
+        """)
+        download_sample_btn.setToolTip("Tải file Excel mẫu với cấu trúc đúng để import (399/NQ-HĐND)")
+        download_sample_btn.clicked.connect(self.download_sample_file)
+        download_layout.addWidget(download_sample_btn)
+        layout.addLayout(download_layout)
         
         # Status label for loaded files
         self.ref_status = QLabel("")
@@ -260,17 +288,21 @@ class MainWindow(QMainWindow):
     def create_process_section(self):
         """Create process type selection section"""
         group = QGroupBox("2. Chọn kiểu xử lý")
-        layout = QVBoxLayout()
-        layout.setSpacing(12)
+        layout = QHBoxLayout() # Horizontal
+        layout.setSpacing(15)
         
-        self.process1_radio = QRadioButton("Xử lý file QUY_TRINH")
+        self.process1_radio = QRadioButton("Xử lý luồng 1 (TT21 của cổng)")
         self.process1_radio.setChecked(True)
         self.process1_radio.toggled.connect(lambda: self.set_process_type(1))
         layout.addWidget(self.process1_radio)
         
-        self.process2_radio = QRadioButton("Xử lý file GIA_HDND (kết hợp MAX)")
+        self.process2_radio = QRadioButton("Xử lý luồng 2 (Import giá dịch vụ được phê duyệt)")
         self.process2_radio.toggled.connect(lambda: self.set_process_type(2))
         layout.addWidget(self.process2_radio)
+        
+        layout.addStretch()
+        
+        # Download button removed from here
         
         group.setLayout(layout)
         return group
@@ -519,6 +551,155 @@ class MainWindow(QMainWindow):
                 os.startfile(unmatched_file)
             else:
                 QMessageBox.warning(self, "Không tìm thấy", f"File không tồn tại:\n{unmatched_file}")
+    
+    def create_sample_template(self, file_path):
+        """Create sample Excel template for GIA_HDND import"""
+        import pandas as pd
+        from openpyxl import load_workbook
+        from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+        
+        # 1. Create Instruction Sheet Data Structure
+        instruction_data = [
+            [1, 'Mã tương đương', 'Text', 50, 'Mã dùng để khớp dữ liệu chính xác 100%', 'Khuyến nghị'],
+            [2, 'STT', 'Number', 10, 'Số thứ tự', 'Không'],
+            [3, 'Tên chương theo TT 23/2024', 'Text', 255, 'Tên chương để lọc và phân loại (Tăng độ chính xác)', 'CÓ'],
+            [4, 'Mã kỹ thuật (TT23/2024)', 'Text', 50, 'Mã kỹ thuật theo thông tư mới', 'Không'],
+            [5, 'Tên dịch vụ kỹ thuật (TT23/2024)', 'Text', 500, 'Tên dịch vụ theo thông tư mới', 'Không'],
+            [6, 'Tên dịch vụ kỹ thuật cụ thể', 'Text', 500, 'Tên dịch vụ thực tế dùng để so khớp (Matching)', 'CÓ'],
+            [7, 'Chi phí trực tiếp + Phụ cấp', 'Number', 20, 'Giá trị chi phí', 'Không'],
+            [8, 'Lương 1,8 triệu', 'Number', 20, 'Giá trị lương cơ sở cũ', 'Không'],
+            [9, 'Giá cụ thể... (TT 21/22)', 'Number', 20, 'Tổng giá theo lương cũ', 'Không'],
+            [10, 'Tiền lương 2,34 triệu', 'Number', 20, 'Giá trị lương cơ sở mới', 'Không'],
+            [11, 'Giá cụ thể... (lương 2.34)', 'Number', 20, 'Tổng giá theo lương mới', 'Không'],
+            [12, 'Mức giá', 'Number', 20, 'Mức giá áp dụng hiện tại (Code ƯU TIÊN lấy giá này)', 'CÓ'],
+            [13, 'Ghi chú', 'Text', 255, 'Ghi chú thêm', 'Không'],
+            [14, 'Quyết định', 'Text', 50, 'Số quyết định ban hành (Code lấy trực tiếp)', 'CÓ']
+        ]
+        
+        df_instr = pd.DataFrame(instruction_data, columns=['TT', 'Chỉ tiêu', 'Định dạng', 'Kích thước tối đa', 'Diễn giải', 'Bắt buộc'])
+        
+        # 2. Create Sample Data Sheet
+        data = {
+            'Mã tương đương': ['01.0002.1778', '01.0004.0321', '01.0006.0215'],
+            'STT': [1, 2, 3],
+            'Tên chương theo TT 23/2024': [
+                '01. HỒI SỨC CẤP CỨU VÀ CHỐNG ĐỘC', 
+                '01. HỒI SỨC CẤP CỨU VÀ CHỐNG ĐỘC', 
+                '01. HỒI SỨC CẤP CỨU VÀ CHỐNG ĐỘC'
+            ],
+            'Mã kỹ thuật (TT23/2024)': ['1.2', '1.4', '1.6'],
+            'Tên dịch vụ kỹ thuật (TT23/2024)': [
+                'Ghi điện tim cấp cứu tại giường', 
+                'Ghi điện tim qua chuyển đạo thực quản', 
+                'Đặt catheter tĩnh mạch ngoại biên'
+            ],
+            'Tên dịch vụ kỹ thuật cụ thể': [
+                'Ghi điện tim cấp cứu tại giường', 
+                'Ghi điện tim qua chuyển đạo thực quản', 
+                'Đặt catheter tĩnh mạch ngoại biên'
+            ],
+            'Chi phí trực tiếp + Phụ cấp': ['20.359', '124.000', '15.000'],
+            'Lương 1,8 triệu': ['15.090', '46.957', '7.826'],
+            'Giá cụ thể bao gồm chi phí trực tiếp, tiền lương tại TT 21-22': ['35.400', '170.000', '22.800'],
+            'Tiền lương 2,34 triệu': ['19.617', '61.043', '10.174'],
+            'Giá cụ thể bao gồm chi phí trực tiếp, tiền lương 2,34 trđ': ['39.976', '185.043', '25.174'],
+            'Mức giá': ['39.900', '185.000', '25.100'],
+            'Ghi chú': [
+                '', 
+                '', 
+                'Chỉ áp dụng với người bệnh ngoại trú; chưa bao gồm thuốc và dịch truyền.'
+            ]
+        }
+        df_data = pd.DataFrame(data)
+        
+        # Write to Excel with updated sheet order: Sample Data FIRST, Instructions SECOND
+        with pd.ExcelWriter(file_path, engine='openpyxl') as writer:
+            df_data.to_excel(writer, sheet_name='Mẫu Import', index=False)
+            df_instr.to_excel(writer, sheet_name='Hướng dẫn', index=False)
+            
+        # Format the Excel file
+        wb = load_workbook(file_path)
+        
+        # Helper function to style headers
+        def style_header(ws):
+            header_fill = PatternFill(start_color='4472C4', end_color='4472C4', fill_type='solid')
+            header_font = Font(bold=True, color='FFFFFF', size=10)
+            border_style = Side(style='thin', color='000000')
+            border = Border(left=border_style, right=border_style, top=border_style, bottom=border_style)
+            
+            for cell in ws[1]:
+                cell.fill = header_fill
+                cell.font = header_font
+                cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
+                cell.border = border
+                
+        # Helper function to auto-fit columns
+        def autofit_columns(ws):
+            for column in ws.columns:
+                max_length = 0
+                column_letter = column[0].column_letter
+                header_val = column[0].value
+                if header_val:
+                    max_length = len(str(header_val))
+                
+                for i, cell in enumerate(column[1:], 1):
+                    if i > 20: break
+                    try:
+                        if cell.value and len(str(cell.value)) > max_length:
+                            max_length = len(str(cell.value))
+                    except:
+                        pass
+                adjusted_width = min(max_length + 4, 50)
+                ws.column_dimensions[column_letter].width = adjusted_width
+
+        # Format Data Sheet
+        style_header(wb['Mẫu Import'])
+        autofit_columns(wb['Mẫu Import'])
+
+        # Format Instruction Sheet
+        ws_instr = wb['Hướng dẫn']
+        style_header(ws_instr)
+        autofit_columns(ws_instr)
+        
+        # Center align the "Bắt buộc" column
+        for cell in ws_instr['F']:
+            cell.alignment = Alignment(horizontal='center', vertical='center')
+        
+        wb.save(file_path)
+    
+    def download_sample_file(self):
+        """Handle download sample file button click"""
+        try:
+            # Ask user where to save
+            file_path, _ = QFileDialog.getSaveFileName(
+                self,
+                "Lưu file mẫu",
+                os.path.join(os.path.expanduser("~"), "mau_import_gia_hdnd.xlsx"),
+                "Excel Files (*.xlsx)"
+            )
+            
+            if file_path:
+                # Ensure .xlsx extension
+                if not file_path.endswith('.xlsx'):
+                    file_path += '.xlsx'
+                
+                # Create the sample template
+                self.create_sample_template(file_path)
+                
+                # Show success message
+                reply = QMessageBox.question(
+                    self,
+                    "Thành công",
+                    f"Đã tải file mẫu thành công!\n\nVị trí: {file_path}\n\nBạn có muốn mở file ngay không?",
+                    QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
+                )
+                
+                if reply == QMessageBox.StandardButton.Yes:
+                    os.startfile(file_path)
+                    
+        except Exception as e:
+            QMessageBox.critical(self, "Lỗi", f"Không thể tạo file mẫu:\n{str(e)}")
+
 
 
 def main():
@@ -528,13 +709,13 @@ def main():
     # Set application-wide font with Vietnamese Unicode support
     # Using Arial which has excellent Vietnamese character support
     font = QFont("Arial", 10)
-    font.setStyleHint(QFont.SansSerif)
+    font.setStyleHint(QFont.StyleHint.SansSerif)
     app.setFont(font)
     
     window = MainWindow()
     window.show()
     
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
 
 
 if __name__ == '__main__':

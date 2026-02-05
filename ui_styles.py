@@ -1,231 +1,184 @@
 """
 UI Styling for Technical Catalog Standardization Tool
-Professional, Minimal Design for Non-Technical Users
-Suitable for Administrative / Medical / Management Applications
+"Sophisticated & Simple" (Sang trọng, Tinh tế, Đơn giản)
+Compact Mode (No Scroll)
 """
 
 MAIN_STYLE = """
 /* ============================================
-   MAIN WINDOW & BACKGROUND
+   GLOBAL SETTINGS
    ============================================ */
 QMainWindow {
-    background-color: #f8f9fa;
+    background-color: #f8fafc; /* Very light slate gray/white */
+}
+
+QWidget {
+    font-family: "Segoe UI", "Inter", "system-ui", sans-serif;
+    color: #334155; /* Slate 700 - Softer than black */
 }
 
 /* ============================================
-   LABELS & TEXT
+   TYPOGRAPHY
    ============================================ */
 QLabel {
-    font-size: 14px;
-    color: #495057;
-    font-family: "Segoe UI", "Arial", sans-serif;
-    font-weight: normal;
+    font-size: 13px;
+    color: #475569; /* Slate 600 */
 }
 
 QLabel#title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #212529;
-    padding: 20px;
+    font-size: 18px; /* Refined size */
+    font-weight: 700;
+    color: #1e293b; /* Slate 800 */
+    padding: 12px;
     background-color: white;
-    border-bottom: 3px solid #4a90e2;
-}
-
-QLabel#section_title {
-    font-size: 16px;
-    font-weight: 600;
-    color: #343a40;
-    padding: 10px 0px;
+    border-bottom: 1px solid #e2e8f0; /* Subtle divider */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 /* ============================================
-   BUTTONS - LARGE & CLEAR
+   BUTTONS (Modern & Flat)
    ============================================ */
 QPushButton {
-    background-color: #4a90e2;
+    background-color: #3b82f6; /* Modern Blue */
     color: white;
     border: none;
-    padding: 14px 28px;
-    font-size: 15px;
-    font-weight: 600;
     border-radius: 4px;
-    min-width: 140px;
-    min-height: 22px;
-    font-family: "Segoe UI", "Arial", sans-serif;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: bold; /* Changed to bold */
 }
 
 QPushButton:hover {
-    background-color: #357abd;
+    background-color: #2563eb;
+    margin-top: -1px; /* Subtle lift */
 }
 
 QPushButton:pressed {
-    background-color: #2a6aa8;
+    background-color: #1d4ed8;
+    margin-top: 1px;
 }
 
 QPushButton:disabled {
-    background-color: #dee2e6;
-    color: #6c757d;
+    background-color: #cbd5e1; /* Slate 300 */
+    color: #94a3b8; /* Slate 400 */
 }
 
-/* Primary action button */
+/* Success Button (Primary Action) */
 QPushButton#success_button {
-    background-color: #28a745;
-    padding: 18px 32px;
-    min-height: 28px;
-    font-size: 16px;
+    background-color: #10b981; /* Emerald 500 */
+    font-size: 15px; /* Larger font */
+    font-weight: 800; /* Extra Bold */
+    text-transform: uppercase; /* Uppercase for impact */
+    padding: 12px 24px;
+    letter-spacing: 1px;
 }
 
 QPushButton#success_button:hover {
-    background-color: #218838;
+    background-color: #059669; /* Emerald 600 */
 }
 
 QPushButton#success_button:disabled {
-    background-color: #dee2e6;
-    color: #6c757d;
-}
-
-/* Warning button */
-QPushButton#warning_button {
-    background-color: #ffc107;
-    color: #212529;
-}
-
-QPushButton#warning_button:hover {
-    background-color: #e0a800;
+    background-color: #cbd5e1; /* Slate 300 - Standard disabled gray */
+    color: #94a3b8; /* Slate 400 - Low contrast text */
+    border: none;
 }
 
 /* ============================================
-   INPUT FIELDS - CLEAN & CLEAR
+   INPUT FIELDS (Clean & Minimal)
    ============================================ */
 QLineEdit, QTextEdit {
-    padding: 14px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    font-size: 14px;
     background-color: white;
-    color: #495057;
-    font-family: "Segoe UI", "Arial", sans-serif;
-    min-height: 20px;
+    border: 1px solid #cbd5e1; /* Slate 300 */
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 13px;
+    selection-background-color: #bfdbfe;
+    color: #334155;
 }
 
 QLineEdit:focus, QTextEdit:focus {
-    border: 2px solid #4a90e2;
-    background-color: #f8f9ff;
+    border: 1px solid #3b82f6; /* Blue 500 */
+    background-color: #fff;
+    /* Qt doesn't support box-shadow well, simulated via border */
 }
 
 QLineEdit:disabled, QTextEdit:disabled {
-    background-color: #e9ecef;
-    color: #6c757d;
-    border: 1px solid #dee2e6;
+    background-color: #f1f5f9; /* Slate 100 */
+    color: #94a3b8;
+    border: 1px solid #e2e8f0;
 }
 
 /* ============================================
-   GROUP BOXES - MINIMAL BORDER
+   GROUP BOXES (Sophisticated Card Style)
    ============================================ */
 QGroupBox {
-    font-size: 15px;
-    font-weight: 600;
-    border: 1px solid #dee2e6;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b; /* Dark Slate Header */
+    border: 1px solid #e2e8f0; /* Slate 200 */
     border-radius: 6px;
-    margin-top: 20px;
-    padding-top: 18px;
+    margin-top: 8px; /* Compact */
+    padding-top: 20px; /* Space for title */
+    padding-bottom: 10px;
     padding-left: 12px;
     padding-right: 12px;
-    padding-bottom: 18px;
     background-color: white;
 }
 
 QGroupBox::title {
     subcontrol-origin: margin;
     subcontrol-position: top left;
-    padding: 6px 12px;
-    color: #343a40;
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
+    padding: 2px 8px;
+    left: 8px;
+    color: #1e293b;
+    background-color: transparent; /* Seamless title */
 }
 
 /* ============================================
-   RADIO BUTTONS - LARGER
+   RADIO BUTTONS
    ============================================ */
 QRadioButton {
-    font-size: 14px;
-    color: #495057;
+    font-size: 13px;
+    color: #475569;
     spacing: 8px;
-    padding: 6px;
-    font-family: "Segoe UI", "Arial", sans-serif;
 }
 
 QRadioButton::indicator {
-    width: 18px;
-    height: 18px;
-}
-
-QRadioButton::indicator:unchecked {
-    border: 2px solid #adb5bd;
-    border-radius: 9px;
-    background-color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
 }
 
 QRadioButton::indicator:checked {
-    border: 2px solid #4a90e2;
-    border-radius: 9px;
-    background-color: #4a90e2;
+    background-color: #3b82f6; /* Solid Blue Center */
+    border: 3px solid white; /* White spacing */
+    outline: 1px solid #3b82f6; /* Outer ring (if supported) or just rely on contrast */
+    border-radius: 8px; /* Ensure circular */
+}
+
+QRadioButton::indicator:checked:hover {
+    background-color: #2563eb;
+}
+
+QRadioButton::indicator:hover {
+    border-color: #3b82f6;
 }
 
 /* ============================================
-   SPINBOX - LARGER
+   SPINBOX
    ============================================ */
 QSpinBox {
-    padding: 12px;
-    border: 1px solid #ced4da;
+    padding: 6px 10px;
+    border: 1px solid #cbd5e1;
     border-radius: 4px;
-    font-size: 14px;
+    color: #334155;
     background-color: white;
-    min-width: 100px;
-    color: #495057;
-    font-family: "Segoe UI", "Arial", sans-serif;
 }
 
 QSpinBox:focus {
-    border: 2px solid #4a90e2;
-}
-
-QSpinBox::up-button, QSpinBox::down-button {
-    width: 20px;
-    border: none;
-    background-color: #f8f9fa;
-}
-
-QSpinBox::up-button:hover, QSpinBox::down-button:hover {
-    background-color: #e9ecef;
-}
-
-/* ============================================
-   SCROLLBAR - MINIMAL
-   ============================================ */
-QScrollBar:vertical {
-    border: none;
-    background-color: #f8f9fa;
-    width: 10px;
-    margin: 0px;
-}
-
-QScrollBar::handle:vertical {
-    background-color: #ced4da;
-    border-radius: 5px;
-    min-height: 30px;
-}
-
-QScrollBar::handle:vertical:hover {
-    background-color: #adb5bd;
-}
-
-QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
-    height: 0px;
-}
-
-QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
-    background: none;
+    border: 1px solid #3b82f6;
 }
 """
