@@ -10,7 +10,9 @@ env/
 # Excel files and data (Privacy)
 *.xlsx
 *.xls
+!web-app/public/data/*.xlsx
 File gốc để chuẩn hóa/
+
 
 # Project specific
 DMKT_BINH_MY.xlsx
