@@ -1,0 +1,71 @@
+2026-02-05 22:19:39 - INFO - ============================================================
+2026-02-05 22:19:39 - INFO - BẮT ĐẦU XỬ LÝ
+2026-02-05 22:19:39 - INFO - File đầu vào: C:/Users/Administrator/Desktop/DMKT_BINH_MY/Diem 1.xlsx
+2026-02-05 22:19:39 - INFO - Loại xử lý: Loại 2: GIA_HDND → File chuẩn
+2026-02-05 22:19:39 - INFO - ============================================================
+2026-02-05 22:19:39 - WARNING - ✗ Không khớp: '(cột 4)' (Ngưỡng: 80%)
+2026-02-05 22:19:40 - WARNING - ✗ Không khớp: 'Làm test phục hồi máu mao mạch' (Ngưỡng: 80%)
+2026-02-05 22:19:40 - DEBUG - ✓ Khớp: 'Đặt catheter tĩnh mạch ngoại biên' → 'Đặt catheter tĩnh mạch ngoại biên' (Độ chính xác: 100%)
+2026-02-05 22:19:40 - WARNING - ✗ Không khớp: 'Hồi sức chống sốc' (Ngưỡng: 80%)
+2026-02-05 22:19:40 - DEBUG - ✓ Khớp: 'Đặt canuyn mũi hầu, miệng hầu' → 'Đặt canuyn mũi hầu, miệng hầu' (Độ chính xác: 100%)
+2026-02-05 22:19:41 - WARNING - ✗ Không khớp: 'Thở oxy qua gọng kính' (Ngưỡng: 80%)
+2026-02-05 22:19:41 - WARNING - ✗ Không khớp: 'Thở oxy qua mặt nạ không có túi' (Ngưỡng: 80%)
+2026-02-05 22:19:42 - WARNING - ✗ Không khớp: 'Thở oxy qua mặt nạ có túi có hít lại (túi không có van)' (Ngưỡng: 80%)
+2026-02-05 22:19:42 - WARNING - ✗ Không khớp: 'Thủ thuật Heimlich (lấy dị vật đường thở) cho người lớn và trẻ em' (Ngưỡng: 80%)
+2026-02-05 22:19:42 - DEBUG - ✓ Khớp: 'Bóp bóng ambu qua mặt nạ' → 'Bóp bóng ambu qua mặt nạ' (Độ chính xác: 100%)
+2026-02-05 22:19:42 - WARNING - Ambiguous match for "Vận động trị liệu hô hấp": Using first of 1 options
+2026-02-05 22:19:42 - DEBUG - ✓ Khớp: 'Vận động trị liệu hô hấp' → 'Vận động trị liệu hô hấp (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:42 - DEBUG - ✓ Khớp: 'Khí dung thuốc cấp cứu (một lần)' → 'Khí dung thuốc cấp cứu (một lần)' (Độ chính xác: 100%)
+2026-02-05 22:19:42 - DEBUG - ✓ Khớp: 'Cấp cứu ngừng tuần hoàn hô hấp cơ bản' → 'Cấp cứu ngừng tuần hoàn hô hấp cơ bản' (Độ chính xác: 100%)
+2026-02-05 22:19:43 - WARNING - ✗ Không khớp: 'Gây nôn cho người bệnh ngộ độc qua đường tiêu hóa' (Ngưỡng: 80%)
+2026-02-05 22:19:43 - WARNING - Ambiguous match for "Rửa dạ dày cấp cứu": Using first of 1 options
+2026-02-05 22:19:43 - DEBUG - ✓ Khớp: 'Rửa dạ dày cấp cứu' → 'Rửa dạ dày cấp cứu (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:43 - WARNING - ✗ Không khớp: 'Lấy máu tĩnh mạch, tiêm thuốc tĩnh mạch (một lần chọc kim qua da)' (Ngưỡng: 80%)
+2026-02-05 22:19:44 - WARNING - ✗ Không khớp: 'Truyền thuốc, dịch tĩnh mạch' (Ngưỡng: 80%)
+2026-02-05 22:19:44 - WARNING - Ambiguous match for "Thay băng cho các vết thương hoại tử rộng (một lần)": Using first of 4 options
+2026-02-05 22:19:44 - DEBUG - ✓ Khớp: 'Thay băng cho các vết thương hoại tử rộng (một lần)' → 'Thay băng cho các vết thương hoại tử rộng (một lần) (⚠️ 4 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:44 - WARNING - ✗ Không khớp: 'Băng ép bất động sơ cứu rắn cắn' (Ngưỡng: 80%)
+2026-02-05 22:19:45 - WARNING - ✗ Không khớp: 'Ga rô hoặc băng ép cầm máu' (Ngưỡng: 80%)
+2026-02-05 22:19:45 - WARNING - ✗ Không khớp: 'Băng bó vết thương' (Ngưỡng: 80%)
+2026-02-05 22:19:46 - WARNING - ✗ Không khớp: 'Cố định tạm thời người bệnh gãy xương' (Ngưỡng: 80%)
+2026-02-05 22:19:46 - WARNING - ✗ Không khớp: 'Cố định cột sống cổ bằng nẹp cứng' (Ngưỡng: 80%)
+2026-02-05 22:19:46 - DEBUG - ✓ Khớp: 'Xét nghiệm đường máu mao mạch tại giường (một lần)' → 'Xét nghiệm đường máu mao mạch tại giường (một lần)' (Độ chính xác: 100%)
+2026-02-05 22:19:46 - WARNING - ✗ Không khớp: 'Đánh giá mức độ nặng của cơn hen phế quản bằng peak flow meter' (Ngưỡng: 80%)
+2026-02-05 22:19:46 - DEBUG - ✓ Khớp: 'Khí dung thuốc giãn phế quản' → 'Khí dung thuốc giãn phế quản' (Độ chính xác: 100%)
+2026-02-05 22:19:46 - DEBUG - ✓ Khớp: 'Hút đờm hầu họng' → 'Hút đờm hầu họng' (Độ chính xác: 100%)
+2026-02-05 22:19:46 - DEBUG - ✓ Khớp: 'Đặt sonde bàng quang' → 'Đặt sonde bàng quang' (Độ chính xác: 100%)
+2026-02-05 22:19:46 - WARNING - Ambiguous match for "Đặt ống thông dạ dày": Using first of 1 options
+2026-02-05 22:19:46 - DEBUG - ✓ Khớp: 'Đặt ống thông dạ dày' → 'Đặt ống thông dạ dày (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:47 - WARNING - ✗ Không khớp: 'Thụt thuốc qua đường hậu môn' (Ngưỡng: 80%)
+2026-02-05 22:19:47 - DEBUG - ✓ Khớp: 'Thụt tháo chuẩn bị sạch đại tràng' → 'Thụt tháo chuẩn bị sạch đại tràng' (Độ chính xác: 100%)
+2026-02-05 22:19:47 - WARNING - Ambiguous match for "Thụt tháo phân": Using first of 1 options
+2026-02-05 22:19:47 - DEBUG - ✓ Khớp: 'Thụt tháo phân' → 'Thụt tháo phân (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:47 - WARNING - ✗ Không khớp: 'Ép tim ngoài lồng ngực' (Ngưỡng: 80%)
+2026-02-05 22:19:47 - WARNING - ✗ Không khớp: 'Thổi ngạt' (Ngưỡng: 80%)
+2026-02-05 22:19:47 - WARNING - ✗ Không khớp: 'Thở oxy gọng kính' (Ngưỡng: 80%)
+2026-02-05 22:19:47 - WARNING - Ambiguous match for "Cố định lồng ngực do chấn thương gãy xương sườn": Using first of 1 options
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Cố định lồng ngực do chấn thương gãy xương sườn' → 'Cố định lồng ngực do chấn thương gãy xương sườn (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Cấp cứu ngừng tuần hoàn hô hấp' → 'Cấp cứu ngừng tuần hoàn hô hấp' (Độ chính xác: 100%)
+2026-02-05 22:19:48 - WARNING - ✗ Không khớp: 'Cầm máu (vết thương chảy máu)' (Ngưỡng: 80%)
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Cắt chỉ khâu da' → 'Cắt chỉ khâu da' (Độ chính xác: 100%)
+2026-02-05 22:19:48 - WARNING - Ambiguous match for "Khí dung mũi họng": Using first of 1 options
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Khí dung mũi họng' → 'Khí dung mũi họng (⚠️ 1 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Tiêm trong da' → 'Tiêm trong da' (Độ chính xác: 100%)
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Tiêm dưới da' → 'Tiêm dưới da' (Độ chính xác: 100%)
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Tiêm bắp thịt' → 'Tiêm bắp thịt' (Độ chính xác: 100%)
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Tiêm tĩnh mạch' → 'Tiêm tĩnh mạch' (Độ chính xác: 100%)
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Truyền tĩnh mạch' → 'Truyền tĩnh mạch' (Độ chính xác: 100%)
+2026-02-05 22:19:48 - WARNING - Ambiguous match for "Khâu vết thương phần mềm dài dưới 10 cm": Using first of 3 options
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Khâu vết thương phần mềm dài dưới 10 cm' → 'Khâu vết thương phần mềm dài dưới 10 cm (⚠️ 3 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Trích rạch áp xe nhỏ' → 'Trích rạch áp xe nhỏ' (Độ chính xác: 100%)
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Trích hạch viêm mủ' → 'Trích hạch viêm mủ' (Độ chính xác: 100%)
+2026-02-05 22:19:48 - WARNING - Ambiguous match for "Thay băng, cắt chỉ": Using first of 7 options
+2026-02-05 22:19:48 - DEBUG - ✓ Khớp: 'Thay băng, cắt chỉ' → 'Thay băng, cắt chỉ (⚠️ 7 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:48 - WARNING - ✗ Không khớp: 'Cấp cứu tự sát' (Ngưỡng: 80%)
+2026-02-05 22:19:49 - DEBUG - ✓ Khớp: 'Test nhanh phát hiện chất opiat trong nước tiểu' → 'Test nhanh phát hiện chất opiat trong nước tiểu' (Độ chính xác: 100%)
+2026-02-05 22:19:49 - DEBUG - ✓ Khớp: 'Test nhanh phát hiện chất gây nghiện trong nước tiểu' → 'Test nhanh phát hiện chất opiat trong nước tiểu' (Độ chính xác: 83%)
+2026-02-05 22:19:49 - WARNING - Ambiguous match for "Thay băng trên người bệnh đái tháo đường": Using first of 7 options
+2026-02-05 22:19:49 - DEBUG - ✓ Khớp: 'Thay băng trên người bệnh đái tháo đường' → 'Thay băng trên người bệnh đái tháo đường (⚠️ 7 tương tự)' (Độ chính xác: 99%)
+2026-02-05 22:19:49 - DEBUG - ✓ Khớp: 'Cắt móng chân, chăm sóc móng trên người bệnh đái tháo đường' → 'Tháo khớp ngón chân trên người bệnh đái tháo đường' (Độ chính xác: 80%)
+2026-02-05 22:19:50 - WARNING - ✗ Không khớp: 'Hướng dẫn kỹ thuật tiêm Insulin' (Ngưỡng: 80%)
+2026-02-05 22:19:50 - WARNING - ✗ Không khớp: 'Hướng dẫn tự chăm sóc bàn chân' (Ngưỡng: 80%)

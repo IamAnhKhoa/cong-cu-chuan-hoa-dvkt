@@ -1,0 +1,15 @@
+2026-02-05 23:03:53 - INFO - ============================================================
+2026-02-05 23:03:53 - INFO - BẮT ĐẦU XỬ LÝ
+2026-02-05 23:03:53 - INFO - File đầu vào: C:/Users/Administrator/Desktop/mau_import_gia_hdnd.xlsx
+2026-02-05 23:03:53 - INFO - Loại xử lý: Loại 2: GIA_HDND → File chuẩn
+2026-02-05 23:03:53 - INFO - ============================================================
+2026-02-05 23:03:53 - DEBUG - ✓ Khớp: 'Ghi điện tim cấp cứu tại giường' → 'Ghi điện tim cấp cứu tại giường' (Độ chính xác: 100%)
+2026-02-05 23:03:53 - DEBUG - ✓ Khớp: 'Ghi điện tim qua chuyển đạo thực quản' → 'Ghi điện tim qua chuyển đạo thực quản' (Độ chính xác: 100%)
+2026-02-05 23:03:53 - DEBUG - ✓ Khớp: 'Đặt catheter tĩnh mạch ngoại biên' → 'Đặt catheter tĩnh mạch ngoại biên' (Độ chính xác: 100%)
+2026-02-05 23:03:53 - INFO - ============================================================
+2026-02-05 23:03:53 - INFO - KẾT THÚC XỬ LÝ
+2026-02-05 23:03:53 - INFO - Tổng số bản ghi: 3
+2026-02-05 23:03:53 - INFO - Khớp thành công: 3
+2026-02-05 23:03:53 - INFO - Không khớp: 0
+2026-02-05 23:03:53 - INFO - Tỷ lệ khớp: 100.0%
+2026-02-05 23:03:53 - INFO - ============================================================

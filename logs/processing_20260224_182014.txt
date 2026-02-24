@@ -1,0 +1,20 @@
+2026-02-24 18:20:56 - INFO - ============================================================
+2026-02-24 18:20:56 - INFO - BẮT ĐẦU XỬ LÝ
+2026-02-24 18:20:56 - INFO - File đầu vào: C:/Users/Administrator/Downloads/tem_imp_dm_dvkt.xlsx
+2026-02-24 18:20:56 - INFO - Loại xử lý: Loại 2: GIA_HDND → File chuẩn
+2026-02-24 18:20:56 - INFO - ============================================================
+2026-02-24 18:20:56 - DEBUG - ✓ Khớp: 'Đo hoạt độ G6PD (Glucose -6 phosphat dehydrogenase) [Máu]' → 'Đo hoạt độ G6PD (Glucose -6 phosphat dehydrogenase) [Máu]' (Độ chính xác: 100%)
+2026-02-24 18:20:57 - DEBUG - ✓ Khớp: 'Phẫu thuật cắt u nang mạc nối lớn1' → 'Nhuộm sợi liên võng trong mô tủy xương' (Độ chính xác: 100%)
+2026-02-24 18:20:57 - DEBUG - ✓ Khớp: 'Phẫu thuật cắt u nang mạc treo ruột không cắt ruột' → 'Phẫu thuật cắt u nang mạc treo ruột không cắt ruột' (Độ chính xác: 100%)
+2026-02-24 18:20:58 - DEBUG - ✓ Khớp: 'Phẫu thuật cắt u nang mạc treo ruột có cắt nối ruột1' → 'Phẫu thuật cắt u nang mạc treo ruột có cắt nối ruột' (Độ chính xác: 100%)
+2026-02-24 18:20:58 - DEBUG - ✓ Khớp: 'Phẫu thuật cắt u sau phúc mạc' → 'Phẫu thuật cắt u sau phúc mạc' (Độ chính xác: 100%)
+2026-02-24 18:20:58 - WARNING - Ambiguous match for "Cắt u nang buồng trứng": Using first of 2 options
+2026-02-24 18:20:58 - DEBUG - ✓ Khớp: 'Cắt u nang buồng trứng' → 'Cắt u nang buồng trứng (⚠️ 2 tương tự)' (Độ chính xác: 99%)
+2026-02-24 18:20:58 - INFO - Đã xuất 1 bản ghi không khớp ra: C:/Users/Administrator/Desktop/tem_imp_dm_dvkt_luong_2_unmatched.xlsx
+2026-02-24 18:20:58 - INFO - ============================================================
+2026-02-24 18:20:58 - INFO - KẾT THÚC XỬ LÝ
+2026-02-24 18:20:58 - INFO - Tổng số bản ghi: 6
+2026-02-24 18:20:58 - INFO - Khớp thành công: 6
+2026-02-24 18:20:58 - INFO - Không khớp: 0
+2026-02-24 18:20:58 - INFO - Tỷ lệ khớp: 100.0%
+2026-02-24 18:20:58 - INFO - ============================================================

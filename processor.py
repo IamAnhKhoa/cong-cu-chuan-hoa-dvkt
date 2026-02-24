@@ -78,6 +78,39 @@ class CatalogProcessor:
         except Exception as e:
             return False, f"Lỗi khi tải file tham chiếu: {str(e)}"
     
+    def detect_code_column(self, df: pd.DataFrame, extra_patterns: List[str] = None) -> Optional[str]:
+        """Detect service code column with broad pattern matching.
+        Tries column names first, then auto-detects by inspecting cell values."""
+        base_patterns = [
+            'MA_DICH_VU', 'MA_TUONG_DUONG', 'MA_KY_THUAT', 'MA_DVKT',
+            'mã dịch vụ', 'mã kỹ thuật', 'mã dvkt', 'mã dịch vụ kỹ thuật',
+            'ma dich vu', 'ma ky thuat', 'ma dvkt',
+            'mã tương đương', 'ma tuong duong',
+            'service code', 'code', 'ma'
+        ]
+        if extra_patterns:
+            base_patterns = extra_patterns + base_patterns
+
+        # Step 1: Check column names
+        for col in df.columns:
+            col_check = col.strip().lower()
+            for pat in base_patterns:
+                if pat.lower() in col_check:
+                    return col
+
+        # Step 2: Auto-detect by inspecting values in first 3 columns
+        #         If a column has values matching XX.XXXX.XXXX or similar code patterns,
+        #         treat it as the code column.
+        import re
+        code_pattern = re.compile(r'^[\w]{2,}[\.]\d+|^\d{2,}[\.]\d+[\.]\d+')
+        for col in list(df.columns)[:5]:  # Only check first 5 columns
+            sample = df[col].dropna().astype(str).head(10)
+            matches = sample.apply(lambda v: bool(code_pattern.match(v.strip())))
+            if matches.sum() >= max(1, len(sample) // 2):  # Majority look like codes
+                return col
+
+        return None
+
     def find_best_match(self, service_name: str, reference_names: List[str], threshold: int = 80) -> Optional[Tuple[str, int]]:
         """Find best matching service name using exact match first, then fuzzy matching
         
@@ -192,7 +225,9 @@ class CatalogProcessor:
             name_column = None
             input_df.columns = input_df.columns.str.strip()  # Normalize headers
             
-            possible_headers = ['tên kỹ thuật', 'tên dịch vụ', 'tên dvkt', 'ten dich vu', 'ten ky thuat', 'tên']
+            possible_headers = ['tên kỹ thuật', 'tên dịch vụ', 'tên dvkt', 'ten dich vu', 'ten ky thuat', 'tên',
+                                 'ten_dvkt_pheduyet', 'ten_dvkt_gia', 'tên dịch vụ kỹ thuật', 'ten dich vu ky thuat',
+                                 'ten_dich_vu', 'tên dịch vụ kỹ thuật']
             
             # Try exact match first
             for col in input_df.columns:
@@ -201,6 +236,13 @@ class CatalogProcessor:
                     break
             
             # Fuzzy header match if exact match fails
+            if name_column is None:
+                for col in input_df.columns:
+                    col_lower = col.lower()
+                    if 'ten_dvkt' in col_lower or 'dvkt_pheduyet' in col_lower:
+                        name_column = col
+                        break
+            
             if name_column is None:
                 for col in input_df.columns:
                     col_lower = col.lower()
@@ -232,12 +274,8 @@ class CatalogProcessor:
             
             reference_names = self.ref_quy_trinh_df[ref_name_column].dropna().astype(str).str.strip().tolist()
             
-            # Find MA_DICH_VU column in input file
-            input_code_column = None
-            for col in input_df.columns:
-                if 'MA_DICH_VU' in col or ('mã' in col.lower() and ('vụ' in col.lower() or 'dịch' in col.lower())):
-                    input_code_column = col
-                    break
+            # Find MA_DICH_VU column in input file (broad detection)
+            input_code_column = self.detect_code_column(input_df)
             
             # Process matching
             results = []
@@ -276,7 +314,9 @@ class CatalogProcessor:
                             matched_by_code = True
                             match_result = (code_matches.iloc[0][ref_name_column], 100)
                 
-                # PRIORITY 2: Fallback to fuzzy name matching if no code match
+                # PRIORITY 2: Fuzzy name matching
+                # Skip ONLY when code match was SUCCESSFUL (not just when code exists)
+                # If code exists but no match found in reference → still fall back to name matching
                 if not matched_by_code:
                     match_result = self.find_best_match(service_name, reference_names, threshold)
                 
@@ -531,12 +571,22 @@ class CatalogProcessor:
             input_df.columns = input_df.columns.str.strip()  # Normalize headers
             
             # Find service name column
-            possible_headers = ['tên kỹ thuật', 'tên dịch vụ', 'tên dvkt', 'ten dich vu', 'ten ky thuat', 'tên']
+            possible_headers = ['tên kỹ thuật', 'tên dịch vụ', 'tên dvkt', 'ten dich vu', 'ten ky thuat', 'tên',
+                                 'ten_dvkt_pheduyet', 'ten_dvkt_gia', 'tên dịch vụ kỹ thuật', 'ten dich vu ky thuat',
+                                 'ten_dich_vu', 'tên dịch vụ kỹ thuật']
             
             for col in input_df.columns:
                 if col.lower() in possible_headers:
                     name_column = col
                     break
+            
+            # Check for TEN_DVKT pattern before generic fallback
+            if name_column is None:
+                for col in input_df.columns:
+                    col_lower = col.lower()
+                    if 'ten_dvkt' in col_lower or 'dvkt_pheduyet' in col_lower:
+                        name_column = col
+                        break
             
             if name_column is None:
                 for col in input_df.columns:
@@ -584,22 +634,26 @@ class CatalogProcessor:
             
             reference_names = self.ref_gia_hdnd_df[ref_name_column].dropna().astype(str).str.strip().tolist()
 
-            # Find MA_TUONG_DUONG column in GIA_HDND reference
-            ref_code_column_gia = None
-            for col in self.ref_gia_hdnd_df.columns:
-                if 'MA_TUONG_DUONG' in col or 'MA_DICH_VU' in col or ('mã' in col.lower() and ('tương' in col.lower() or 'vụ' in col.lower())):
-                    ref_code_column_gia = col
-                    break
+            # Find MA_TUONG_DUONG column in GIA_HDND reference (broad detection)
+            ref_code_column_gia = self.detect_code_column(self.ref_gia_hdnd_df, ['MA_TUONG_DUONG', 'mã tương đương'])
             
             # Prepare reference names from DVKT_GIA_MAX if available
             max_reference_names = []
             max_ref_name_col = None
             max_ref_code_col = None
+            max_ref_pheduyet_col = None  # separate column for TEN_DVKT_PHEDUYET in output
             if self.ref_dvkt_gia_max_df is not None:
                 self.ref_dvkt_gia_max_df.columns = self.ref_dvkt_gia_max_df.columns.str.strip()
+                
+                # Matching key: use TEN_DVKT_GIA (original behavior)
                 for col in self.ref_dvkt_gia_max_df.columns:
                     if 'TEN_DVKT_GIA' in col or ('Tên' in col and 'Gia' in col):
                         max_ref_name_col = col
+                        break
+                # Also locate TEN_DVKT_PHEDUYET column to pull into output
+                for col in self.ref_dvkt_gia_max_df.columns:
+                    if 'TEN_DVKT_PHEDUYET' in col or col.strip().lower() == 'ten_dvkt_pheduyet':
+                        max_ref_pheduyet_col = col
                         break
                 # Find code column in DVKT_GIA_MAX
                 for col in self.ref_dvkt_gia_max_df.columns:
@@ -609,12 +663,8 @@ class CatalogProcessor:
                 if max_ref_name_col:
                     max_reference_names = self.ref_dvkt_gia_max_df[max_ref_name_col].dropna().astype(str).str.strip().tolist()
             
-            # Find MA_DICH_VU or MA_TUONG_DUONG column in input file
-            input_code_column = None
-            for col in input_df.columns:
-                if 'MA_DICH_VU' in col or 'MA_TUONG_DUONG' in col or ('mã' in col.lower() and ('vụ' in col.lower() or 'dịch' in col.lower() or 'tương' in col.lower())):
-                    input_code_column = col
-                    break
+            # Find MA_DICH_VU or MA_TUONG_DUONG column in input file (broad detection)
+            input_code_column = self.detect_code_column(input_df)
 
             
             # Also prepare QUY_TRINH reference for combining
@@ -679,19 +729,33 @@ class CatalogProcessor:
                                 matched_by_code_max = True
                                 match_result_max = (max_code_matches.iloc[0][max_ref_name_col], 100)
                 
-                # PRIORITY 2: Fallback to fuzzy name matching if no code match
-                # 1. Find best match in GIA_HDND (with chapter filtering if available)
+                # Track if input has a code that was NOT found in any reference
+                input_code_value = ''
+                code_not_found_in_ref = False
+                if input_code_column:
+                    _raw_code = row.get(input_code_column)
+                    if not pd.isna(_raw_code) and str(_raw_code).strip():
+                        input_code_value = str(_raw_code).strip()
+                        # Code exists but neither GIA_HDND nor DVKT_GIA_MAX matched it
+                        if not matched_by_code_gia and not matched_by_code_max:
+                            code_not_found_in_ref = True
+
+                # PRIORITY 2: Fuzzy name matching
+                # Skip ONLY when code match was SUCCESSFUL for a file (not just when code exists)
+                # If code exists but not found in reference → still fall back to name matching
                 if not matched_by_code_gia:
+                    # 1. Find best match in GIA_HDND (with chapter filtering if available)
                     if ref_chapter_column and chapter_name:
                         match_result_gia = self.find_best_match_with_chapter(
-                            service_name, chapter_name, self.ref_gia_hdnd_df, 
+                            service_name, chapter_name, self.ref_gia_hdnd_df,
                             ref_name_column, ref_chapter_column, threshold)
                     else:
                         match_result_gia = self.find_best_match(service_name, reference_names, threshold)
                 
-                # 2. Find best match in DVKT_GIA_MAX (no chapter filtering for MAX)
                 if not matched_by_code_max:
+                    # 2. Find best match in DVKT_GIA_MAX (no chapter filtering for MAX)
                     match_result_max = self.find_best_match(service_name, max_reference_names, threshold) if max_reference_names else None
+
 
                 # Logic: Use MAX data if available, otherwise GIA_HDND, otherwise empty
                 
@@ -804,28 +868,10 @@ class CatalogProcessor:
                     if progress_callback:
                         progress_callback(f"Đã xử lý {idx + 1}/{len(input_df)}: Cảnh báo - {service_name[:50]}...")
                 
-                elif match_result_max and match_result_max[0] != 'AMBIGUOUS':
-                    matched_name_max, score_max = match_result_max
-                    ref_matches_max = self.ref_dvkt_gia_max_df[self.ref_dvkt_gia_max_df[max_ref_name_col] == matched_name_max]
-                    
-                    if len(ref_matches_max) > 0:
-                        ref_row_max = ref_matches_max.iloc[0]
-                        
-                        output_row['MA_TUONG_DUONG'] = ref_row_max.get('MA_TUONG_DUONG', '')
-                        output_row['TEN_DVKT_PHEDUYET'] = ref_row_max.get('TEN_DVKT_PHEDUYET', '')
-                        output_row['TEN_DVKT_GIA'] = matched_name_max
-                        output_row['PHAN_LOAI_PTTT'] = ref_row_max.get('PHAN_LOAI_PTTT', '')
-                        output_row['GHI_CHU'] = ref_row_max.get('GHI_CHU', '')
-                        
-                        max_price = ref_row_max.get('DON_GIA', '')
-                        if not max_price and 'GIÁ_MAX' in ref_row_max: 
-                             max_price = ref_row_max['GIÁ_MAX']
-                        output_row['DON_GIA'] = max_price
-                        
-                        matched_name_display = matched_name_max
-                        score_display = score_max
-
-                # If we have a GIA match (not ambiguous), get Price and other fields
+                # PRIORITY: GIA_HDND is processed FIRST for price and reference fields
+                # ======================================================================
+                
+                # Step 1: Fill all fields from GIA_HDND (highest priority for DON_GIA)
                 if match_result_gia and match_result_gia[0] != 'AMBIGUOUS':
                     matched_name_gia, score_gia = match_result_gia
                     ref_matches_gia = self.ref_gia_hdnd_df[self.ref_gia_hdnd_df[ref_name_column] == matched_name_gia]
@@ -833,31 +879,58 @@ class CatalogProcessor:
                     if len(ref_matches_gia) > 0:
                         ref_row_gia = ref_matches_gia.iloc[0]
                         
-                        # Price Priority: GIA_HDND > DVKT_GIA_MAX (as requested)
-                        # GIA_HDND always takes priority if it has valid price
-                        gia_price = ref_row_gia.get('Mức giá', '')
-                        if not pd.isna(gia_price) and str(gia_price).strip() != '':
-                            # Always use GIA_HDND price if available (overwrite MAX)
-                            output_row['DON_GIA'] = gia_price
+                        # GIA_HDND price — ALWAYS first
+                        for price_col in ['Mức giá', 'DON_GIA', 'Giá', 'Đơn giá', 'don_gia', 'muc_gia']:
+                            gia_price = ref_row_gia.get(price_col, '')
+                            if gia_price != '' and not pd.isna(gia_price) and str(gia_price).strip() != '':
+                                output_row['DON_GIA'] = gia_price
+                                break
                         
-                        output_row['QUYET_DINH'] = ref_row_gia.get('Quyết định', '') 
-                        output_row['TU_NGAY'] = '' 
-                        output_row['DEN_NGAY'] = ''
+                        output_row['QUYET_DINH'] = ref_row_gia.get('Quyết định', '')
+                        output_row['MA_TUONG_DUONG'] = ref_row_gia.get('Mã tương đương', ref_row_gia.get('MA_TUONG_DUONG', ''))
+                        output_row['GHI_CHU'] = ref_row_gia.get('Ghi chú', ref_row_gia.get('GHI_CHU', ''))
+                        output_row['TEN_DVKT_GIA'] = matched_name_gia
+                        output_row['TEN_DVKT_PHEDUYET'] = ref_row_gia.get('Tên chương theo TT 23/2024', '')
+                        matched_name_display = matched_name_gia
+                        score_display = score_gia
+
+                # Step 2: Fill supplementary fields from DVKT_GIA_MAX (lower priority)
+                # MAX price is only used if GIA_HDND did NOT provide a price
+                if match_result_max and match_result_max[0] != 'AMBIGUOUS':
+                    matched_name_max, score_max = match_result_max
+                    ref_matches_max = self.ref_dvkt_gia_max_df[self.ref_dvkt_gia_max_df[max_ref_name_col] == matched_name_max]
+                    
+                    if len(ref_matches_max) > 0:
+                        ref_row_max = ref_matches_max.iloc[0]
                         
-                        # Fallbacks for other fields if not in MAX
-                        if not match_result_max:
-                            output_row['MA_TUONG_DUONG'] = ref_row_gia.get('Mã tương đương', '')
-                            output_row['PHAN_LOAI_PTTT'] = '' 
-                            output_row['GHI_CHU'] = ref_row_gia.get('Ghi chú', '')
-                            matched_name_display = matched_name_gia
-                            score_display = score_gia
-                        
-                        # TEN_DVKT_PHEDUYET and TEN_DVKT_GIA: Only use GIA if MAX didn't provide them
-                        # Priority: MAX > GIA for these two fields
-                        if not output_row['TEN_DVKT_PHEDUYET']:
-                            output_row['TEN_DVKT_PHEDUYET'] = ref_row_gia.get('Tên chương theo TT 23/2024', '')
+                        # MAX enriches MA_TUONG_DUONG, PHAN_LOAI_PTTT if not set by GIA
+                        if not output_row['MA_TUONG_DUONG']:
+                            output_row['MA_TUONG_DUONG'] = ref_row_max.get('MA_TUONG_DUONG', '')
+                        # TEN_DVKT_PHEDUYET: ALWAYS from DVKT_GIA_MAX (user requirement)
+                        pheduyet_val = ''
+                        if max_ref_pheduyet_col:
+                            pheduyet_val = ref_row_max.get(max_ref_pheduyet_col, '')
+                        if not pheduyet_val:
+                            pheduyet_val = ref_row_max.get('TEN_DVKT_PHEDUYET', '')
+                        output_row['TEN_DVKT_PHEDUYET'] = pheduyet_val
                         if not output_row['TEN_DVKT_GIA']:
-                            output_row['TEN_DVKT_GIA'] = matched_name_gia
+                            output_row['TEN_DVKT_GIA'] = matched_name_max
+                        output_row['PHAN_LOAI_PTTT'] = ref_row_max.get('PHAN_LOAI_PTTT', '')
+                        if not output_row['GHI_CHU']:
+                            output_row['GHI_CHU'] = ref_row_max.get('GHI_CHU', '')
+                        
+                        # MAX price: ONLY as fallback when GIA_HDND has no price
+                        if not output_row['DON_GIA']:
+                            max_price = ref_row_max.get('DON_GIA', '')
+                            if not max_price and 'GIÁ_MAX' in ref_row_max:
+                                max_price = ref_row_max['GIÁ_MAX']
+                            if max_price and not pd.isna(max_price):
+                                output_row['DON_GIA'] = max_price
+                        
+                        if not matched_name_display or matched_name_display == 'KHÔNG TÌM THẤY':
+                            matched_name_display = matched_name_max
+                            score_display = score_max
+
 
                 # LOOKUP QUY_TRINH FOR ALL MATCHED RECORDS (after both GIA and MAX matching)
                 # This should run for ALL records that have MA_TUONG_DUONG or a matched name
@@ -895,6 +968,16 @@ class CatalogProcessor:
                 if not output_row['TEN_DVKT_GIA']:
                     output_row['TEN_DVKT_GIA'] = service_name
                 
+                # Warning: input code not found in reference → name-matched fallback used
+                if code_not_found_in_ref:
+                    matched_code_by_name = output_row.get('MA_TUONG_DUONG', '')
+                    warn_msg = f'⚠️ Sai mã so với file HDND | Mã nhập: {input_code_value}'
+                    if matched_code_by_name:
+                        warn_msg += f' | Mã theo tên: {matched_code_by_name}'
+                    existing_warn = output_row.get('CANH_BAO', '')
+                    output_row['CANH_BAO'] = (existing_warn + ' | ' + warn_msg).strip(' |') if existing_warn else warn_msg
+                    output_row['_highlight_yellow'] = True  # marker for Excel coloring
+                
                 results.append(output_row)
                 
                 # Count stats - ambiguous matches are already counted separately
@@ -927,8 +1010,10 @@ class CatalogProcessor:
                     'score': score_display
                 })
             
-            # Create output DataFrame
+            # Create output DataFrame - drop internal marker columns
             output_df = pd.DataFrame(results)
+            if '_highlight_yellow' in output_df.columns:
+                output_df.drop(columns=['_highlight_yellow'], inplace=True)
             
             # Save to Excel with proper encoding
             output_df.to_excel(output_file, index=False, engine='openpyxl')
